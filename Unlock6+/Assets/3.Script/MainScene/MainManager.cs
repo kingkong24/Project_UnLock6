@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MainManager : MonoBehaviour
 {
+    // 메인 버튼은 활성화하고, 게임 버튼은 비활성화.
     [SerializeField] public GameObject[] MainSelect;
     [SerializeField] public GameObject[] GameSelect;
 
