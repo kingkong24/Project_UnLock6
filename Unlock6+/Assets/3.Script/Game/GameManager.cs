@@ -1,26 +1,26 @@
 using System.Collections;
+using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] private GameObject[] cardInformationUI;
-    [SerializeField] private GameObject informationDeck;
-    [SerializeField] private GameObject useDeck;
-    private GameObject[] informationCards, useCards;
-    Queue<string> cardQueue = new Queue<string>();
-    private bool IsInformationOn = false;
-    private string curCard;
+    public GameObject[] informationCards, useCards;
+    public static Queue<string> cardQueue = new Queue<string>();
+    public static string curCard;
 
+    [SerializeField] public GameObject[] cardInformationUI;
+    [SerializeField] public GameObject informationDeck;
+    [SerializeField] public GameObject useDeck;
 
-    void Start()
+    private void Awake()
     {
         // 오브젝트 배열 생성
         informationCards = ObjectsAsArray(informationDeck);
         useCards = ObjectsAsArray(useDeck);
 
         // informationCards, cardInformationUI 비활성화
-        ObjectsArrayOnOff(false, cardInformationUI);
+        ObjectsArrayOnOff(true, cardInformationUI);
         ObjectsArrayOnOff(false, informationCards);
 
         // useDeck 위치 초기화
@@ -28,44 +28,13 @@ public class GameManager : MonoBehaviour
         {
             group.transform.position = new Vector3(20, -12, 0);
         }
-
-        // Queue에 0카드 넣기
-        cardQueue.Enqueue("0");
-        cardQueue.Enqueue("0_1");
     }
 
-    void Update()
+    void Start()
     {
-        if (cardQueue.Count == 0)
-        {
-            return;
-        }
-
-        string curCard = cardQueue.Dequeue();
-        ObjectsArrayOnOff(true, cardInformationUI);
-        ObjectinArrayOnOff(true, informationCards, curCard);
-
-    }
-
-    // 오브젝트 배열 ON/OFF
-    private void ObjectsArrayOnOff(bool IsOn , GameObject[] objects)
-    {
-        foreach (GameObject group in objects)
-        {
-            group.SetActive(IsOn);
-        }
-    }
-
-    // 오브젝트 배열 중 특정 오브젝트 ON/OFF
-    private void ObjectinArrayOnOff(bool IsOn, GameObject[] objects, string objectName)
-    {
-        foreach (GameObject group in objects)
-        {
-            if (group.name == objectName)
-            {
-                group.SetActive(IsOn);
-            }
-        }
+        // 0 가져오기
+        curCard = "0";
+        ObjectinArrayOnOff(true, informationCards, "0");
     }
 
     // GameObject에 상속된 Object들을 배열로 저장
@@ -78,4 +47,38 @@ public class GameManager : MonoBehaviour
         }
         return ObjectsArray;
     }
+
+    // 오브젝트 배열 ON/OFF
+    public void ObjectsArrayOnOff(bool IsOn, GameObject[] objects)
+    {
+        foreach (GameObject group in objects)
+        {
+            group.SetActive(IsOn);
+        }
+    }
+
+    // 오브젝트 배열 중 특정 오브젝트 ON/OFF
+    public void ObjectinArrayOnOff(bool IsOn, GameObject[] objects, string objectName)
+    {
+        foreach (GameObject group in objects)
+        {
+            if (group.name == objectName)
+            {
+                group.SetActive(IsOn);
+            }
+        }
+    }
+
+    // 오브젝트 배열 중 특정 오브젝트 위치 옮기기
+    public void ObjectinArrayPosition(Vector3 vector3, GameObject[] objects, string objectName)
+    {
+        foreach (GameObject group in objects)
+        {
+            if (group.name == objectName)
+            {
+                group.transform.position = vector3;
+            }
+        }
+    }
+
 }
