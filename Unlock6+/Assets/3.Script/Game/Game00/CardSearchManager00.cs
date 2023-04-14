@@ -7,9 +7,11 @@ public class CardSearchManager00 : GameManager
 {
     [SerializeField] InputField inputCardName;
     [SerializeField] GameObject ErrorMessage;
+    private bool IsExistenceCaed;
 
     public void CardSearchClick()
     {
+        IsExistenceCaed = false;
         foreach (GameObject group in informationCards)
         {
             if (group.name == inputCardName.text)
@@ -17,12 +19,13 @@ public class CardSearchManager00 : GameManager
                 curCard = inputCardName.text;
                 ObjectsArrayOnOff(true, cardInformationUI);
                 ObjectinArrayOnOff(true, informationCards, curCard);
+                IsExistenceCaed = true;
             }
-            else
-            {
-                StopCoroutine(OnErrorMessage());
-                StartCoroutine(OnErrorMessage());
-            }
+        }
+        if (!IsExistenceCaed)
+        {
+            StopCoroutine(OnErrorMessage());
+            StartCoroutine(OnErrorMessage());
         }
     }
 
