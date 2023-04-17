@@ -15,13 +15,8 @@ public class NextButtonManager00 : GameManager
         MethodInfo methodInfo = GetType().GetMethod("Gimmick" + curCard);
 
         // 함수 이름과 일치하는 메소드가 있는지 확인
-        if (methodInfo == null)
+        if (methodInfo != null)
         {
-            Debug.Log("Function not found : Gimmick" + curCard);
-        }
-        else
-        {
-            // 함수 호출
             methodInfo.Invoke(this, null);
         }
 
@@ -41,22 +36,42 @@ public class NextButtonManager00 : GameManager
     #region
     public void Gimmick0()
     {
-        ObjectinArrayPosition(new Vector3(0, 0, 0), useCards, "0");
+        BringCard("0");
         cardQueue.Enqueue("0_1");
     }
     public void Gimmick0_1()
     {
         targetCard = new List<string> { "11", "11_1", "21", "21_1", "35", "35_1", "42", "42_1", "69", "69_1" };
-       
-        foreach (string group in targetCard)
-        {
-            ObjectinArrayPosition(new Vector3 (0, 0, 0), useCards, group);
-            cardQueue.Enqueue(group);
-        }
+        BringCards(targetCard);
+    }
+    public void Gimmick11()
+    {
+        BringCard("11");
+        cardQueue.Enqueue("11_1");
+    }
+    public void Gimmick21()
+    {
+        BringCard("21");
+        cardQueue.Enqueue("21_1");
+    }
+    public void Gimmick35()
+    {
+        BringCard("35");
+        cardQueue.Enqueue("35_1");
+    }
+    public void Gimmick42()
+    {
+        BringCard("42");
+        cardQueue.Enqueue("42_1");
+    }
+    public void Gimmick69()
+    {
+        BringCard("69");
+        cardQueue.Enqueue("69_1");
     }
     public void Gimmick46()
     {
-        ObjectinArrayPosition(new Vector3(0, 0, 0), useCards, "46");
+        BringCard("46");
         cardQueue.Enqueue("46_1");
     }
     public void Gimmick46_1()
@@ -66,12 +81,12 @@ public class NextButtonManager00 : GameManager
     }
     public void Gimmick16()
     {
-        ObjectinArrayPosition(new Vector3(0, 0, 0), useCards, "16");
+        BringCard("16");
         cardQueue.Enqueue("16_1");
     }
     public void Gimmick25()
     {
-        ObjectinArrayPosition(new Vector3(0, 0, 0), useCards, "25");
+        BringCard("25");
         cardQueue.Enqueue("25_1");
     }
     public void Gimmick25_1()
@@ -82,7 +97,7 @@ public class NextButtonManager00 : GameManager
     }
     public void Gimmick48()
     {
-        ObjectinArrayPosition(new Vector3(0, 0, 0), useCards, "48");
+        BringCard("48");
         cardQueue.Enqueue("48_1");
     }
     public void Gimmick48_1()
@@ -92,4 +107,28 @@ public class NextButtonManager00 : GameManager
     }
 
     #endregion
+
+    // 카드를 활성화하고 자리 설정
+    public void BringCard(string curCard)
+    {
+        if (!IsRun[curCard])
+        {
+            ObjectinArrayOnOff(true, useCards, curCard);
+            ObjectinArrayPosition(new Vector3(0, 0, 0), useCards, curCard);
+            IsRun[curCard] = true;
+        }
+    }
+
+    // 카드들을 활성화하고 자리 설정
+    public void BringCards(List<string> targetCard)
+    {
+        foreach (string group in targetCard)
+        {
+            if (IsRun.ContainsKey(group) && !IsRun[group])
+            {
+                BringCard(group);
+                cardQueue.Enqueue(group);
+            }
+        }
+    }
 }

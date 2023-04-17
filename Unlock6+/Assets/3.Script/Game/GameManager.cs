@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 {
     public GameObject[] informationCards, useCards;
     public static Queue<string> cardQueue = new Queue<string>();
+    public static Dictionary<string, bool> IsRun = new Dictionary<string, bool>();
     public static string curCard;
 
     [SerializeField] public GameObject[] cardInformationUI;
@@ -19,19 +20,21 @@ public class GameManager : MonoBehaviour
         informationCards = ObjectsAsArray(informationDeck);
         useCards = ObjectsAsArray(useDeck);
 
-        // informationCards, cardInformationUI 비활성화
-        ObjectsArrayOnOff(true, cardInformationUI);
-        ObjectsArrayOnOff(false, informationCards);
-
-        // useDeck 위치 초기화
+        // useDeck 위치 및 사용 여부 초기화 
         foreach (GameObject group in useCards)
         {
+            if (!IsRun.ContainsKey(group.name))
+            {
+                IsRun.Add(group.name, false);
+            }
             group.transform.position = new Vector3(20, -12, 0);
         }
-    }
 
-    void Start()
-    {
+        // informationCards,  useCards 비활성화, cardInformationUI 활성화
+        ObjectsArrayOnOff(true, cardInformationUI);
+        ObjectsArrayOnOff(false, informationCards);
+        ObjectsArrayOnOff(false, useCards);
+
         // 0 가져오기
         curCard = "0";
         ObjectinArrayOnOff(true, informationCards, "0");

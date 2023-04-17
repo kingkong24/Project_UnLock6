@@ -7,7 +7,19 @@ using System.Reflection;
 
 public class NextButtonManager01 : GameManager
 {
+    [SerializeField] public BoardControl01 Board;
+    [SerializeField] public GameObject GameObjectboard;
+    [SerializeField] public GameObject CardSet;
+    [SerializeField] public Sprite front0, back0, front1, back1, front2, back2, front3, back3, front4, back4, front5, back5, front6, back6;
+    public Sprite front, back;
+    public bool isfront = true;
     private List<string> targetCard;
+
+    void OnEnable()
+    {
+        CardSet.SetActive(false);
+        GameObject boardObject = GameObject.Find("Board0");
+    }
 
     // "다음으로" 버튼 관련 메소드
     public void NextButtonClick()
@@ -36,27 +48,38 @@ public class NextButtonManager01 : GameManager
     #region
     public void Gimmick0()
     {
-        ObjectinArrayPosition(new Vector3(0, 0, 0), useCards, "0");
+        BringCard("0");
         cardQueue.Enqueue("0_1");
     }
+    public void Gimmick0_1(){}
     public void Gimmick2()
     {
-        ObjectinArrayPosition(new Vector3(0, 0, 0), useCards, "2");
+        BringCard("2");
         cardQueue.Enqueue("2_1");
     }
     public void Gimmick2_1()
     {
         targetCard = new List<string> { "15", "15_1", "29", "29_1", "47", "47_1" };
-
-        foreach (string group in targetCard)
-        {
-            ObjectinArrayPosition(new Vector3(0, 0, 0), useCards, group);
-            cardQueue.Enqueue(group);
-        }
+        BringCards(targetCard);
+    }
+    public void Gimmick15()
+    {
+        BringCard("15");
+        cardQueue.Enqueue("15_1");
+    }
+    public void Gimmick29()
+    {
+        BringCard("29");
+        cardQueue.Enqueue("29_1");
+    }
+    public void Gimmick47()
+    {
+        BringCard("47");
+        cardQueue.Enqueue("47_1");
     }
     public void Gimmick68()
     {
-        ObjectinArrayPosition(new Vector3(0, 0, 0), useCards, "68");
+        BringCard("68");
         cardQueue.Enqueue("68_1");
     }
     public void Gimmick68_1()
@@ -66,7 +89,7 @@ public class NextButtonManager01 : GameManager
     }
     public void Gimmick83()
     {
-        ObjectinArrayPosition(new Vector3(0, 0, 0), useCards, "83");
+        BringCard("83");
         cardQueue.Enqueue("83_1");
     }
     public void Gimmick83_1()
@@ -74,45 +97,58 @@ public class NextButtonManager01 : GameManager
         ObjectinArrayOnOff(false, useCards, "15");
         ObjectinArrayOnOff(false, useCards, "68");
         targetCard = new List<string> { "33", "33_1", "84", "84_1" };
-
-        foreach (string group in targetCard)
-        {
-            ObjectinArrayPosition(new Vector3(0, 0, 0), useCards, group);
-            cardQueue.Enqueue(group);
-        }
+        BringCards(targetCard);
     }
-
-    public void Gimmick33_1()
+    public void Gimmick33()
     {
-        targetCard = new List<string> { "72", "72_1", "87", "87_1" };
-
-        foreach (string group in targetCard)
-        {
-            ObjectinArrayPosition(new Vector3(0, 0, 0), useCards, group);
-            cardQueue.Enqueue(group);
-        }
+        BringCard("33");
+        cardQueue.Enqueue("33_1");
     }
-
+    public void Gimmick84()
+    {
+        GameObjectboard.SetActive(true);
+        BringCard("84");
+        cardQueue.Enqueue("84_1");
+    }
     public void Gimmick84_1()
     {
         ObjectinArrayOnOff(false, useCards, "84");
-        // 보드를 가져온다.
     }
-
+    public void Gimmick33_1()
+    {
+        targetCard = new List<string> { "72", "72_1", "87", "87_1" };
+        BringCards(targetCard);
+    }
+    public void Gimmick72()
+    {
+        BringCard("72");
+        cardQueue.Enqueue("72_1");
+    }
+    public void Gimmick87()
+    {
+        BringCard("87");
+        cardQueue.Enqueue("87_1");
+    }
     public void Gimmick56()
     {
-        ObjectinArrayPosition(new Vector3(0, 0, 0), useCards, "56");
+        BringCard("56");
         cardQueue.Enqueue("56_1");
     }
 
     public void Gimmick56_1()
     {
-        ObjectinArrayPosition(new Vector3(0, 0, 0), useCards, "Z");
         cardQueue.Enqueue("Z");
     }
 
     public void GimmickZ()
     {
+        if (!IsRun["Z"])
+        {
+            GameObjectboard.GetComponent<SpriteRenderer>().sprite = front1;
+            Board.front = front1;
+            Board.back = back1;
+        }
+        BringCard("Z");
         cardQueue.Enqueue("Z_1");
     }
 
@@ -123,39 +159,51 @@ public class NextButtonManager01 : GameManager
 
     public void Gimmick63()
     {
-        ObjectinArrayPosition(new Vector3(0, 0, 0), useCards, "63");
+        BringCard("63");
         cardQueue.Enqueue("63_1");
     }
     public void Gimmick34()
     {
-        ObjectinArrayPosition(new Vector3(0, 0, 0), useCards, "34");
+        BringCard("34");
         cardQueue.Enqueue("34_1");
     }
     public void Gimmick62()
     {
-        ObjectinArrayPosition(new Vector3(0, 0, 0), useCards, "62");
+        if (!IsRun["62"])
+        {
+            GameObjectboard.GetComponent<SpriteRenderer>().sprite = front2;
+            Board.front = front2;
+            Board.back = back2;
+        }
+        BringCard("62");
         cardQueue.Enqueue("62_1");
     }
     public void Gimmick16()
     {
-        ObjectinArrayPosition(new Vector3(0, 0, 0), useCards, "16");
+        BringCard("16");
         cardQueue.Enqueue("16_1");
     }
 
     public void Gimmick67()
     {
-        ObjectinArrayPosition(new Vector3(0, 0, 0), useCards, "67");
+        BringCard("67");
         cardQueue.Enqueue("67_1");
     }
 
     public void Gimmick58()
     {
-        ObjectinArrayPosition(new Vector3(0, 0, 0), useCards, "58");
+        BringCard("58");
         cardQueue.Enqueue("58_1");
     }
     public void Gimmick42()
     {
-        ObjectinArrayPosition(new Vector3(0, 0, 0), useCards, "42");
+        if (!IsRun["42"])
+        {
+            GameObjectboard.GetComponent<SpriteRenderer>().sprite = front3;
+            Board.front = front3;
+            Board.back = back3;
+        }
+        BringCard("42");
         cardQueue.Enqueue("42_1");
     }
     public void Gimmick42_1()
@@ -164,12 +212,12 @@ public class NextButtonManager01 : GameManager
     }
     public void GimmickQ()
     {
-        ObjectinArrayPosition(new Vector3(0, 0, 0), useCards, "Q");
+        BringCard("Q");
         cardQueue.Enqueue("Q_1");
     }
     public void Gimmick27()
     {
-        ObjectinArrayPosition(new Vector3(0, 0, 0), useCards, "27");
+        BringCard("27");
         cardQueue.Enqueue("27_1");
     }
     public void Gimmick27_1()
@@ -178,17 +226,17 @@ public class NextButtonManager01 : GameManager
     }
     public void Gimmick30()
     {
-        ObjectinArrayPosition(new Vector3(0, 0, 0), useCards, "30");
+        BringCard("30");
         cardQueue.Enqueue("30_1");
     }
     public void Gimmick82()
     {
-        ObjectinArrayPosition(new Vector3(0, 0, 0), useCards, "82");
+        BringCard("82");
         cardQueue.Enqueue("82_1");
     }
     public void Gimmick46()
     {
-        ObjectinArrayPosition(new Vector3(0, 0, 0), useCards, "46");
+        BringCard("46");
         cardQueue.Enqueue("46_1");
     }
     public void Gimmick46_1()
@@ -200,12 +248,12 @@ public class NextButtonManager01 : GameManager
     }
     public void Gimmick22()
     {
-        ObjectinArrayPosition(new Vector3(0, 0, 0), useCards, "22");
+        BringCard("22");
         cardQueue.Enqueue("22_1");
     }
     public void Gimmick64()
     {
-        ObjectinArrayPosition(new Vector3(0, 0, 0), useCards, "64");
+        BringCard("64");
         cardQueue.Enqueue("64_1");
     }
     public void Gimmick64_1()
@@ -214,7 +262,13 @@ public class NextButtonManager01 : GameManager
     }
     public void Gimmick91()
     {
-        ObjectinArrayPosition(new Vector3(0, 0, 0), useCards, "91");
+        if (!IsRun["91"])
+        {
+            GameObjectboard.GetComponent<SpriteRenderer>().sprite = front4;
+            Board.front = front4;
+            Board.back = back4;
+        }
+        BringCard("91");
         cardQueue.Enqueue("91_1");
     }
     public void Gimmick91_1()
@@ -224,7 +278,7 @@ public class NextButtonManager01 : GameManager
     }
     public void Gimmick12()
     {
-        ObjectinArrayPosition(new Vector3(0, 0, 0), useCards, "12");
+        BringCard("12");
         cardQueue.Enqueue("12_1");
     }
     public void Gimmick12_1()
@@ -234,7 +288,13 @@ public class NextButtonManager01 : GameManager
     }
     public void Gimmick59()
     {
-        ObjectinArrayPosition(new Vector3(0, 0, 0), useCards, "59");
+        if (!IsRun["59"])
+        {
+            GameObjectboard.GetComponent<SpriteRenderer>().sprite = front5;
+            Board.front = front5;
+            Board.back = back5;
+        }
+        BringCard("59");
         cardQueue.Enqueue("59_1");
     }
     public void Gimmick59_1()
@@ -243,12 +303,12 @@ public class NextButtonManager01 : GameManager
     }
     public void Gimmick18()
     {
-        ObjectinArrayPosition(new Vector3(0, 0, 0), useCards, "18");
+        BringCard("18");
         cardQueue.Enqueue("18_1");
     }
     public void Gimmick19()
     {
-        ObjectinArrayPosition(new Vector3(0, 0, 0), useCards, "19");
+        BringCard("19");
         cardQueue.Enqueue("19_1");
     }
     public void Gimmick19_1()
@@ -257,7 +317,7 @@ public class NextButtonManager01 : GameManager
     }
     public void Gimmick76()
     {
-        ObjectinArrayPosition(new Vector3(0, 0, 0), useCards, "76");
+        BringCard("76");
         cardQueue.Enqueue("76_1");
     }
     public void Gimmick76_1()
@@ -266,7 +326,13 @@ public class NextButtonManager01 : GameManager
     }
     public void Gimmick85()
     {
-        ObjectinArrayPosition(new Vector3(0, 0, 0), useCards, "85");
+        if (!IsRun["85"])
+        {
+            GameObjectboard.GetComponent<SpriteRenderer>().sprite = front6;
+            Board.front = front6;
+            Board.back = back6;
+        }
+        BringCard("85");
         cardQueue.Enqueue("85_1");
     }
     public void Gimmick85_1()
@@ -276,7 +342,7 @@ public class NextButtonManager01 : GameManager
     }
     public void Gimmick75()
     {
-        ObjectinArrayPosition(new Vector3(0, 0, 0), useCards, "75");
+        BringCard("75");
         cardQueue.Enqueue("75_1");
     }
     public void Gimmick75_1()
@@ -285,7 +351,7 @@ public class NextButtonManager01 : GameManager
     }
     public void Gimmick39()
     {
-        ObjectinArrayPosition(new Vector3(0, 0, 0), useCards, "39");
+        BringCard("39");
         cardQueue.Enqueue("39_1");
     }
     public void Gimmick39_1()
@@ -294,12 +360,12 @@ public class NextButtonManager01 : GameManager
     }
     public void Gimmick31()
     {
-        ObjectinArrayPosition(new Vector3(0, 0, 0), useCards, "31");
+        BringCard("31");
         cardQueue.Enqueue("31_1");
     }
     public void Gimmick70()
     {
-        ObjectinArrayPosition(new Vector3(0, 0, 0), useCards, "70");
+        BringCard("70");
         cardQueue.Enqueue("70_1");
     }
     public void Gimmick70_1()
@@ -310,12 +376,12 @@ public class NextButtonManager01 : GameManager
     }
     public void Gimmick13()
     {
-        ObjectinArrayPosition(new Vector3(0, 0, 0), useCards, "13");
+        BringCard("13");
         cardQueue.Enqueue("13_1");
     }
     public void Gimmick89()
     {
-        ObjectinArrayPosition(new Vector3(0, 0, 0), useCards, "89");
+        BringCard("89");
         cardQueue.Enqueue("89_1");
     }
     public void Gimmick89_1()
@@ -326,7 +392,7 @@ public class NextButtonManager01 : GameManager
     }
     public void Gimmick66()
     {
-        ObjectinArrayPosition(new Vector3(0, 0, 0), useCards, "66");
+        BringCard("66");
         cardQueue.Enqueue("66_1");
     }
     public void Gimmick66_1()
@@ -335,7 +401,7 @@ public class NextButtonManager01 : GameManager
     }
     public void Gimmick36()
     {
-        ObjectinArrayPosition(new Vector3(0, 0, 0), useCards, "36");
+        BringCard("36");
         cardQueue.Enqueue("36_1");
     }
     public void Gimmick36_1()
@@ -344,7 +410,7 @@ public class NextButtonManager01 : GameManager
     }
     public void Gimmick32()
     {
-        ObjectinArrayPosition(new Vector3(0, 0, 0), useCards, "32");
+        BringCard("32");
         cardQueue.Enqueue("32_1");
     }
     public void Gimmick32_1()
@@ -352,31 +418,31 @@ public class NextButtonManager01 : GameManager
         ObjectinArrayOnOff(false, useCards, "36");
         targetCard = new List<string> { "14", "14_1", "17", "17_1", "43", "43_1", "99", "99_1" };
 
-        foreach (string group in targetCard)
-        {
-            ObjectinArrayPosition(new Vector3(0, 0, 0), useCards, group);
-            cardQueue.Enqueue(group);
-        }
+        BringCards(targetCard);
     }
     public void Gimmick14()
     {
-        ObjectinArrayPosition(new Vector3(0, 0, 0), useCards, "14");
+        BringCard("14");
+        cardQueue.Enqueue("14_1");
     }
     public void Gimmick17()
     {
-        ObjectinArrayPosition(new Vector3(0, 0, 0), useCards, "17");
+        BringCard("17");
+        cardQueue.Enqueue("17_1");
     }
     public void Gimmick43()
     {
-        ObjectinArrayPosition(new Vector3(0, 0, 0), useCards, "43");
+        BringCard("43");
+        cardQueue.Enqueue("43_1");
     }
     public void Gimmick99()
     {
-        ObjectinArrayPosition(new Vector3(0, 0, 0), useCards, "99");
+        BringCard("99");
+        cardQueue.Enqueue("99_1");
     }
     public void Gimmick24()
     {
-        ObjectinArrayPosition(new Vector3(0, 0, 0), useCards, "24");
+        BringCard("24");
         cardQueue.Enqueue("24_1");
     }
     public void Gimmick24_1()
@@ -385,7 +451,7 @@ public class NextButtonManager01 : GameManager
     }
     public void Gimmick77()
     {
-        ObjectinArrayPosition(new Vector3(0, 0, 0), useCards, "77");
+        BringCard("77");
         cardQueue.Enqueue("77_1");
     }
     public void Gimmick77_1()
@@ -395,7 +461,7 @@ public class NextButtonManager01 : GameManager
     }
     public void Gimmick81()
     {
-        ObjectinArrayPosition(new Vector3(0, 0, 0), useCards, "81");
+        BringCard("81");
         cardQueue.Enqueue("81_1");
     }
     public void Gimmick81_1()
@@ -405,7 +471,7 @@ public class NextButtonManager01 : GameManager
     }
     public void Gimmick71()
     {
-        ObjectinArrayPosition(new Vector3(0, 0, 0), useCards, "71");
+        BringCard("71");
         cardQueue.Enqueue("71_1");
     }
     public void Gimmick71_1()
@@ -414,7 +480,7 @@ public class NextButtonManager01 : GameManager
     }
     public void Gimmick88()
     {
-        ObjectinArrayPosition(new Vector3(0, 0, 0), useCards, "88");
+        BringCard("88");
         cardQueue.Enqueue("88_1");
     }
     public void Gimmick88_1()
@@ -424,7 +490,7 @@ public class NextButtonManager01 : GameManager
     }
     public void Gimmick52()
     {
-        ObjectinArrayPosition(new Vector3(0, 0, 0), useCards, "52");
+        BringCard("52");
         cardQueue.Enqueue("52_1");
     }
     public void Gimmick52_1()
@@ -434,14 +500,15 @@ public class NextButtonManager01 : GameManager
         ObjectinArrayOnOff(false, useCards, "77");
         ObjectinArrayOnOff(false, useCards, "81");
         ObjectinArrayOnOff(false, useCards, "88");
-        // 합체도면 생성
+        GameObjectboard.SetActive(false);
+        CardSet.SetActive(true);
     }
 
 
     // 벌점카드
     public void Gimmick57()
     {
-        ObjectinArrayPosition(new Vector3(0, 0, 0), useCards, "57");
+        BringCard("57");
         cardQueue.Enqueue("57_1");
     }
     public void Gimmick57_1()
@@ -450,7 +517,7 @@ public class NextButtonManager01 : GameManager
     }
     public void Gimmick45()
     {
-        ObjectinArrayPosition(new Vector3(0, 0, 0), useCards, "45");
+        BringCard("45");
         cardQueue.Enqueue("45_1");
     }
     public void Gimmick45_1()
@@ -459,7 +526,7 @@ public class NextButtonManager01 : GameManager
     }
     public void Gimmick48()
     {
-        ObjectinArrayPosition(new Vector3(0, 0, 0), useCards, "48");
+        BringCard("48");
         cardQueue.Enqueue("48_1");
     }
     public void Gimmick48_1()
@@ -468,7 +535,7 @@ public class NextButtonManager01 : GameManager
     }
     public void Gimmick61()
     {
-        ObjectinArrayPosition(new Vector3(0, 0, 0), useCards, "61");
+        BringCard("61");
         cardQueue.Enqueue("61_1");
     }
     public void Gimmick61_1()
@@ -477,7 +544,7 @@ public class NextButtonManager01 : GameManager
     }
     public void Gimmick79()
     {
-        ObjectinArrayPosition(new Vector3(0, 0, 0), useCards, "79");
+        BringCard("79");
         cardQueue.Enqueue("79_1");
     }
     public void Gimmick79_1()
@@ -486,7 +553,7 @@ public class NextButtonManager01 : GameManager
     }
     public void Gimmick80()
     {
-        ObjectinArrayPosition(new Vector3(0, 0, 0), useCards, "80");
+        BringCard("80");
         cardQueue.Enqueue("80_1");
     }
     public void Gimmick80_1()
@@ -495,7 +562,7 @@ public class NextButtonManager01 : GameManager
     }
     public void Gimmick90()
     {
-        ObjectinArrayPosition(new Vector3(0, 0, 0), useCards, "90");
+        BringCard("90");
         cardQueue.Enqueue("90_1");
     }
     public void Gimmick90_1()
@@ -503,7 +570,28 @@ public class NextButtonManager01 : GameManager
         ObjectinArrayOnOff(false, useCards, "90");
     }
 
-
-
     #endregion
+    // 카드를 활성화하고 자리 설정
+    public void BringCard(string curCard)
+    {
+        if (!IsRun[curCard])
+        {
+            ObjectinArrayOnOff(true, useCards, curCard);
+            ObjectinArrayPosition(new Vector3(0, 0, 0), useCards, curCard);
+            IsRun[curCard] = true;
+        }
+    }
+
+    // 카드들을 활성화하고 자리 설정
+    public void BringCards(List<string> targetCard)
+    {
+        foreach (string group in targetCard)
+        {
+            if (IsRun.ContainsKey(group) && !IsRun[group])
+            {
+                BringCard(group);
+                cardQueue.Enqueue(group);
+            }
+        }
+    }
 }
