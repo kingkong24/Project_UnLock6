@@ -11,7 +11,7 @@ public class MainButtonManager : MonoBehaviour
     // 해당 씬을 불러옴
     public void SceneLoader(string Scenename)
     {
-        SceneManager.LoadScene(Scenename);
+        SceneManager.LoadScene(Scenename, LoadSceneMode.Single);
     }
 
     // 프로그램 종료

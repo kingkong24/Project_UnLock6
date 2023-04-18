@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 
 public class CardControl : MonoBehaviour
 {
-    [SerializeField] private float minX = -16, maxX = 16, minY = -9, maxY = 7;
+    [SerializeField] private float minX = -14, maxX = 14, minY = -6, maxY = 4;
     [SerializeField] private float curlSpeed = 20f;
     [SerializeField] public Sprite front, back;
     private bool isfront = false;

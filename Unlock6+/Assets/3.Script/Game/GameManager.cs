@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
 {
     public GameObject[] informationCards, useCards;
     public static Queue<string> cardQueue = new Queue<string>();
-    public static Dictionary<string, bool> IsRun = new Dictionary<string, bool>();
+    public static Dictionary<string, bool> IsRun;
     public static string curCard;
 
     [SerializeField] public GameObject[] cardInformationUI;
@@ -16,11 +16,18 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
+        Initialize();
+    }
+
+    // 초기화
+    public void Initialize()
+    {
         // 오브젝트 배열 생성
         informationCards = ObjectsAsArray(informationDeck);
         useCards = ObjectsAsArray(useDeck);
 
         // useDeck 위치 및 사용 여부 초기화 
+        IsRun = new Dictionary<string, bool>();
         foreach (GameObject group in useCards)
         {
             if (!IsRun.ContainsKey(group.name))
@@ -38,6 +45,8 @@ public class GameManager : MonoBehaviour
         // 0 가져오기
         curCard = "0";
         ObjectinArrayOnOff(true, informationCards, "0");
+        ObjectinArrayOnOff(true, useCards, "0");
+        ObjectinArrayPosition(new Vector3(0, 0, 0), useCards, "0");
     }
 
     // GameObject에 상속된 Object들을 배열로 저장
@@ -67,7 +76,7 @@ public class GameManager : MonoBehaviour
         {
             if (group.name == objectName)
             {
-                group.SetActive(IsOn);
+                    group.SetActive(IsOn);
             }
         }
     }
