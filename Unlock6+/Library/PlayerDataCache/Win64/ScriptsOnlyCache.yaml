@@ -19,7 +19,6 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
-    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridBrush
     - UnityEditor.Tilemaps.GridBrushEditor
@@ -1041,4 +1040,4 @@ ScriptsOnlyBuild:
   - Assets/1.Scene/GameScene1.unity
   - Assets/1.Scene/GameScene2.unity
   - Assets/1.Scene/GameScene3.unity
-  playerPath: "C:/Users/KGA/Desktop/\uC0C8 \uD3F4\uB354/Unlock6+.exe"
+  playerPath: C:/Users/KGA/Desktop/unlock6+/Unlock6+.exe

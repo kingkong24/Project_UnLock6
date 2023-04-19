@@ -223,7 +223,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &33894068
 Transform:
   m_ObjectHideFlags: 0
@@ -277,7 +277,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1764215477
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5ea37b1052f7cbf4cb2e6a9612433d38, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -303,11 +303,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minX: -14
   maxX: 14
-  minY: -6
-  maxY: 4
-  curlSpeed: 20
+  minY: -7
+  maxY: 5
+  curlSpeed: 60
   front: {fileID: 21300000, guid: e6101d0921c680a468f57db95c16b0a5, type: 3}
   back: {fileID: 21300000, guid: 5ea37b1052f7cbf4cb2e6a9612433d38, type: 3}
+  cardReverseSound: {fileID: 8300000, guid: fa004eac8e4140444822e66b4aea4fa1, type: 3}
 --- !u!61 &33894071
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -332,7 +333,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18, y: 33.512726}
+  m_Size: {x: 18, y: 33.5}
   m_EdgeRadius: 0
 --- !u!1 &36376556
 GameObject:
@@ -516,7 +517,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &51657526
 Transform:
   m_ObjectHideFlags: 0
@@ -570,7 +571,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1764215477
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e8ca425fde2e6ce4497c3112ebe3e88b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -596,11 +597,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minX: -14
   maxX: 14
-  minY: -6
-  maxY: 4
-  curlSpeed: 20
+  minY: -7
+  maxY: 5
+  curlSpeed: 60
   front: {fileID: 21300000, guid: f1340739f7494ad40b22671017561064, type: 3}
   back: {fileID: 21300000, guid: e8ca425fde2e6ce4497c3112ebe3e88b, type: 3}
+  cardReverseSound: {fileID: 8300000, guid: fa004eac8e4140444822e66b4aea4fa1, type: 3}
 --- !u!61 &51657529
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -625,7 +627,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18, y: 33.512726}
+  m_Size: {x: 18, y: 33.5}
   m_EdgeRadius: 0
 --- !u!1 &56531087
 GameObject:
@@ -973,7 +975,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &98568369
 Transform:
   m_ObjectHideFlags: 0
@@ -1027,7 +1029,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1764215477
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f73b223785dc5ea4285812331a1a49f5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1053,11 +1055,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minX: -14
   maxX: 14
-  minY: -6
-  maxY: 4
-  curlSpeed: 20
+  minY: -7
+  maxY: 5
+  curlSpeed: 60
   front: {fileID: 21300000, guid: 2c898c94212a94342b1537df6afe9353, type: 3}
   back: {fileID: 21300000, guid: f73b223785dc5ea4285812331a1a49f5, type: 3}
+  cardReverseSound: {fileID: 8300000, guid: fa004eac8e4140444822e66b4aea4fa1, type: 3}
 --- !u!61 &98568372
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1082,7 +1085,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18, y: 33.512726}
+  m_Size: {x: 18, y: 33.5}
   m_EdgeRadius: 0
 --- !u!1 &103392557
 GameObject:
@@ -1332,7 +1335,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &126686804
 Transform:
   m_ObjectHideFlags: 0
@@ -1386,7 +1389,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1764215477
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b4afaa3fbdfba564fb181268857f8b25, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1412,11 +1415,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minX: -14
   maxX: 14
-  minY: -6
-  maxY: 4
-  curlSpeed: 20
+  minY: -7
+  maxY: 5
+  curlSpeed: 60
   front: {fileID: 21300000, guid: 694417ca126e36e4da166b4dc9a3c763, type: 3}
   back: {fileID: 21300000, guid: b4afaa3fbdfba564fb181268857f8b25, type: 3}
+  cardReverseSound: {fileID: 8300000, guid: fa004eac8e4140444822e66b4aea4fa1, type: 3}
 --- !u!61 &126686807
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1441,7 +1445,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18, y: 33.512726}
+  m_Size: {x: 18, y: 33.5}
   m_EdgeRadius: 0
 --- !u!1 &140504567
 GameObject:
@@ -1461,7 +1465,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &140504568
 Transform:
   m_ObjectHideFlags: 0
@@ -1515,7 +1519,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1764215477
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 4ce6c8df963694a4694e8545f3922110, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1541,11 +1545,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minX: -14
   maxX: 14
-  minY: -6
-  maxY: 4
-  curlSpeed: 20
+  minY: -7
+  maxY: 5
+  curlSpeed: 60
   front: {fileID: 21300000, guid: f3899448b22579741bca4d0a70403bcb, type: 3}
   back: {fileID: 21300000, guid: 4ce6c8df963694a4694e8545f3922110, type: 3}
+  cardReverseSound: {fileID: 8300000, guid: fa004eac8e4140444822e66b4aea4fa1, type: 3}
 --- !u!61 &140504571
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1570,7 +1575,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18, y: 33.512726}
+  m_Size: {x: 18, y: 33.5}
   m_EdgeRadius: 0
 --- !u!1 &148948004
 GameObject:
@@ -1672,7 +1677,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &158081506
 Transform:
   m_ObjectHideFlags: 0
@@ -1726,7 +1731,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1764215477
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d76b713f6c9f6634aad5bccd753e53d5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1752,11 +1757,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minX: -14
   maxX: 14
-  minY: -6
-  maxY: 4
-  curlSpeed: 20
+  minY: -7
+  maxY: 5
+  curlSpeed: 60
   front: {fileID: 21300000, guid: 2e323b5ca6cc24245a9910653138b10b, type: 3}
   back: {fileID: 21300000, guid: d76b713f6c9f6634aad5bccd753e53d5, type: 3}
+  cardReverseSound: {fileID: 8300000, guid: fa004eac8e4140444822e66b4aea4fa1, type: 3}
 --- !u!61 &158081509
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1781,7 +1787,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18, y: 33.512726}
+  m_Size: {x: 18, y: 33.5}
   m_EdgeRadius: 0
 --- !u!1 &189007795
 GameObject:
@@ -2047,7 +2053,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &208512085
 Transform:
   m_ObjectHideFlags: 0
@@ -2101,7 +2107,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1764215477
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 01a268dea3cbd984aa563fa4404f563e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2127,11 +2133,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minX: -14
   maxX: 14
-  minY: -6
-  maxY: 4
-  curlSpeed: 20
+  minY: -7
+  maxY: 5
+  curlSpeed: 60
   front: {fileID: 21300000, guid: fccf173f763b887488105f7eda46ae2b, type: 3}
   back: {fileID: 21300000, guid: 01a268dea3cbd984aa563fa4404f563e, type: 3}
+  cardReverseSound: {fileID: 8300000, guid: fa004eac8e4140444822e66b4aea4fa1, type: 3}
 --- !u!61 &208512088
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2156,7 +2163,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18, y: 33.512726}
+  m_Size: {x: 18, y: 33.5}
   m_EdgeRadius: 0
 --- !u!1 &213531131
 GameObject:
@@ -2832,13 +2839,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 237457412}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: -0, z: 0.7071068, w: -0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 10}
   m_LocalScale: {x: 0.19999999, y: 0.19999999, z: 1}
   m_Children: []
   m_Father: {fileID: 1148269135}
   m_RootOrder: 59
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 270}
 --- !u!212 &237457414
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2908,7 +2915,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &248407143
 Transform:
   m_ObjectHideFlags: 0
@@ -2962,7 +2969,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1764215477
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5bfac7515a4ea7240b691a75c6ffdc02, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2988,11 +2995,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minX: -14
   maxX: 14
-  minY: -6
-  maxY: 4
-  curlSpeed: 20
+  minY: -7
+  maxY: 5
+  curlSpeed: 60
   front: {fileID: 21300000, guid: 162b38024c46b3646b0505a9cc2233e2, type: 3}
   back: {fileID: 21300000, guid: 5bfac7515a4ea7240b691a75c6ffdc02, type: 3}
+  cardReverseSound: {fileID: 8300000, guid: fa004eac8e4140444822e66b4aea4fa1, type: 3}
 --- !u!61 &248407146
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3017,7 +3025,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18, y: 33.512726}
+  m_Size: {x: 18, y: 33.5}
   m_EdgeRadius: 0
 --- !u!1 &264325105
 GameObject:
@@ -3289,13 +3297,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 275123641}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: -0, z: 0.7071068, w: -0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 10}
   m_LocalScale: {x: 0.19999999, y: 0.19999999, z: 1}
   m_Children: []
   m_Father: {fileID: 1148269135}
   m_RootOrder: 101
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 270}
 --- !u!212 &275123643
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3535,13 +3543,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 284418911}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: -0, z: 0.7071068, w: -0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 10}
   m_LocalScale: {x: 0.19999999, y: 0.19999999, z: 1}
   m_Children: []
   m_Father: {fileID: 1148269135}
   m_RootOrder: 89
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 270}
 --- !u!212 &284418913
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3693,7 +3701,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &285764177
 Transform:
   m_ObjectHideFlags: 0
@@ -3747,7 +3755,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1764215477
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: cbff2170f6d6eeb4ba59025cebef9809, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3773,11 +3781,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minX: -14
   maxX: 14
-  minY: -6
-  maxY: 4
-  curlSpeed: 20
+  minY: -7
+  maxY: 5
+  curlSpeed: 60
   front: {fileID: 21300000, guid: 76636f0556604a047beedd11961c4e6d, type: 3}
   back: {fileID: 21300000, guid: cbff2170f6d6eeb4ba59025cebef9809, type: 3}
+  cardReverseSound: {fileID: 8300000, guid: fa004eac8e4140444822e66b4aea4fa1, type: 3}
 --- !u!61 &285764180
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3802,7 +3811,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18, y: 33.512726}
+  m_Size: {x: 18, y: 33.5}
   m_EdgeRadius: 0
 --- !u!1 &289810989
 GameObject:
@@ -3904,7 +3913,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &289887293
 Transform:
   m_ObjectHideFlags: 0
@@ -3958,7 +3967,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1764215477
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: a7ed45a939b5c7e41b69f72e115b700e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3984,11 +3993,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minX: -14
   maxX: 14
-  minY: -6
-  maxY: 4
-  curlSpeed: 20
+  minY: -7
+  maxY: 5
+  curlSpeed: 60
   front: {fileID: 21300000, guid: 9504fc10fcc370b44bebc5bf00c87478, type: 3}
   back: {fileID: 21300000, guid: a7ed45a939b5c7e41b69f72e115b700e, type: 3}
+  cardReverseSound: {fileID: 8300000, guid: fa004eac8e4140444822e66b4aea4fa1, type: 3}
 --- !u!61 &289887296
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4013,7 +4023,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18, y: 33.512726}
+  m_Size: {x: 18, y: 33.5}
   m_EdgeRadius: 0
 --- !u!1 &320668193
 GameObject:
@@ -4033,7 +4043,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &320668194
 Transform:
   m_ObjectHideFlags: 0
@@ -4087,7 +4097,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1764215477
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 051923e9a83418a47a03ce63c6c05cd2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4113,11 +4123,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minX: -14
   maxX: 14
-  minY: -6
-  maxY: 4
-  curlSpeed: 20
+  minY: -7
+  maxY: 5
+  curlSpeed: 60
   front: {fileID: 21300000, guid: 7a1b98c6a7f713b4f8d919d9de646ba6, type: 3}
   back: {fileID: 21300000, guid: 051923e9a83418a47a03ce63c6c05cd2, type: 3}
+  cardReverseSound: {fileID: 8300000, guid: fa004eac8e4140444822e66b4aea4fa1, type: 3}
 --- !u!61 &320668197
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4142,7 +4153,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18, y: 33.512726}
+  m_Size: {x: 18, y: 33.5}
   m_EdgeRadius: 0
 --- !u!1 &321281368
 GameObject:
@@ -4383,13 +4394,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 367849028}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: -0, z: 0.7071068, w: -0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 10}
   m_LocalScale: {x: 0.19999999, y: 0.19999999, z: 1}
   m_Children: []
   m_Father: {fileID: 1148269135}
   m_RootOrder: 109
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 270}
 --- !u!212 &367849030
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4607,7 +4618,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &382723231
 Transform:
   m_ObjectHideFlags: 0
@@ -4661,7 +4672,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1764215477
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: bae0bb2341494aa4cbcb3b63268db615, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4687,11 +4698,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minX: -14
   maxX: 14
-  minY: -6
-  maxY: 4
-  curlSpeed: 20
+  minY: -7
+  maxY: 5
+  curlSpeed: 60
   front: {fileID: 21300000, guid: bb281b0cf81d1a74ca73735e2b06b839, type: 3}
   back: {fileID: 21300000, guid: bae0bb2341494aa4cbcb3b63268db615, type: 3}
+  cardReverseSound: {fileID: 8300000, guid: fa004eac8e4140444822e66b4aea4fa1, type: 3}
 --- !u!61 &382723234
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4716,7 +4728,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18, y: 33.512726}
+  m_Size: {x: 18, y: 33.5}
   m_EdgeRadius: 0
 --- !u!1 &383531898
 GameObject:
@@ -4736,7 +4748,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &383531899
 Transform:
   m_ObjectHideFlags: 0
@@ -4790,7 +4802,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1764215477
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: a23cdf10ae529e646ae9ed86d29fea6f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4816,11 +4828,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minX: -14
   maxX: 14
-  minY: -6
-  maxY: 4
-  curlSpeed: 20
+  minY: -7
+  maxY: 5
+  curlSpeed: 60
   front: {fileID: 21300000, guid: 9fc0ddf112587d44e9b0156b0e657ba8, type: 3}
   back: {fileID: 21300000, guid: a23cdf10ae529e646ae9ed86d29fea6f, type: 3}
+  cardReverseSound: {fileID: 8300000, guid: fa004eac8e4140444822e66b4aea4fa1, type: 3}
 --- !u!61 &383531902
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4845,7 +4858,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18, y: 33.512726}
+  m_Size: {x: 18, y: 33.5}
   m_EdgeRadius: 0
 --- !u!1 &387652305
 GameObject:
@@ -4871,13 +4884,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 387652305}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: -0, z: 0.7071068, w: -0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 10}
   m_LocalScale: {x: 0.19999999, y: 0.19999999, z: 1}
   m_Children: []
   m_Father: {fileID: 1148269135}
   m_RootOrder: 111
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 270}
 --- !u!212 &387652307
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5272,7 +5285,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &435888176
 Transform:
   m_ObjectHideFlags: 0
@@ -5326,7 +5339,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1764215477
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7cff79bf7d6fdb541822e4e61868f2d2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5352,11 +5365,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minX: -14
   maxX: 14
-  minY: -6
-  maxY: 4
-  curlSpeed: 20
+  minY: -7
+  maxY: 5
+  curlSpeed: 60
   front: {fileID: 21300000, guid: cff84d94c7638194082240ad2e985614, type: 3}
   back: {fileID: 21300000, guid: 7cff79bf7d6fdb541822e4e61868f2d2, type: 3}
+  cardReverseSound: {fileID: 8300000, guid: fa004eac8e4140444822e66b4aea4fa1, type: 3}
 --- !u!61 &435888179
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5381,7 +5395,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18, y: 33.512726}
+  m_Size: {x: 18, y: 33.5}
   m_EdgeRadius: 0
 --- !u!1 &438087507
 GameObject:
@@ -5401,7 +5415,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &438087508
 Transform:
   m_ObjectHideFlags: 0
@@ -5455,7 +5469,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1764215477
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b18916f1e978a324db3525d2705376c8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5481,11 +5495,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minX: -14
   maxX: 14
-  minY: -6
-  maxY: 4
-  curlSpeed: 20
+  minY: -7
+  maxY: 5
+  curlSpeed: 60
   front: {fileID: 21300000, guid: 5d9b3ec3a301e2141be7c1f67d06f1c3, type: 3}
   back: {fileID: 21300000, guid: b18916f1e978a324db3525d2705376c8, type: 3}
+  cardReverseSound: {fileID: 8300000, guid: fa004eac8e4140444822e66b4aea4fa1, type: 3}
 --- !u!61 &438087511
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5510,7 +5525,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18, y: 33.512726}
+  m_Size: {x: 18, y: 33.5}
   m_EdgeRadius: 0
 --- !u!1 &470796337
 GameObject:
@@ -5776,7 +5791,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &501760598
 Transform:
   m_ObjectHideFlags: 0
@@ -5830,7 +5845,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1764215477
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 11b89d9eeb84c854585855f862c3689e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5856,11 +5871,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minX: -14
   maxX: 14
-  minY: -6
-  maxY: 4
-  curlSpeed: 20
+  minY: -7
+  maxY: 5
+  curlSpeed: 60
   front: {fileID: 21300000, guid: 1b8800d556318ed47af008ed1ef61930, type: 3}
   back: {fileID: 21300000, guid: 11b89d9eeb84c854585855f862c3689e, type: 3}
+  cardReverseSound: {fileID: 8300000, guid: fa004eac8e4140444822e66b4aea4fa1, type: 3}
 --- !u!61 &501760601
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5885,7 +5901,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18, y: 33.512726}
+  m_Size: {x: 18, y: 33.5}
   m_EdgeRadius: 0
 --- !u!1 &519491533
 GameObject:
@@ -5905,7 +5921,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &519491534
 Transform:
   m_ObjectHideFlags: 0
@@ -5959,7 +5975,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1764215477
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2b165b010bf3305408b5ee0865d661d0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5985,11 +6001,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minX: -14
   maxX: 14
-  minY: -6
-  maxY: 4
-  curlSpeed: 20
+  minY: -7
+  maxY: 5
+  curlSpeed: 60
   front: {fileID: 21300000, guid: b03473660bb64fc43b0c9375609432ea, type: 3}
   back: {fileID: 21300000, guid: 2b165b010bf3305408b5ee0865d661d0, type: 3}
+  cardReverseSound: {fileID: 8300000, guid: fa004eac8e4140444822e66b4aea4fa1, type: 3}
 --- !u!61 &519491537
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6014,7 +6031,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18, y: 33.512726}
+  m_Size: {x: 18, y: 33.5}
   m_EdgeRadius: 0
 --- !u!1 &522577806
 GameObject:
@@ -6454,7 +6471,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &567399878
 Transform:
   m_ObjectHideFlags: 0
@@ -6508,7 +6525,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1764215477
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: a55f88c36ff59954bb7ab588c6cf992d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -6534,11 +6551,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minX: -14
   maxX: 14
-  minY: -6
-  maxY: 4
-  curlSpeed: 20
+  minY: -7
+  maxY: 5
+  curlSpeed: 60
   front: {fileID: 21300000, guid: 54335a9b10568b64d8dbf3fca576d2d1, type: 3}
   back: {fileID: 21300000, guid: a55f88c36ff59954bb7ab588c6cf992d, type: 3}
+  cardReverseSound: {fileID: 8300000, guid: fa004eac8e4140444822e66b4aea4fa1, type: 3}
 --- !u!61 &567399881
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6563,7 +6581,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18, y: 33.512726}
+  m_Size: {x: 18, y: 33.5}
   m_EdgeRadius: 0
 --- !u!1 &576576530
 GameObject:
@@ -6671,7 +6689,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &586854613
 Transform:
   m_ObjectHideFlags: 0
@@ -6725,7 +6743,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1764215477
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d401f97a69491e544bede02bf7900831, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -6751,11 +6769,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minX: -14
   maxX: 14
-  minY: -6
-  maxY: 4
-  curlSpeed: 20
+  minY: -7
+  maxY: 5
+  curlSpeed: 60
   front: {fileID: 21300000, guid: 961fb1e4c58e8a648bcb348b33e53542, type: 3}
   back: {fileID: 21300000, guid: d401f97a69491e544bede02bf7900831, type: 3}
+  cardReverseSound: {fileID: 8300000, guid: fa004eac8e4140444822e66b4aea4fa1, type: 3}
 --- !u!61 &586854616
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6780,7 +6799,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18, y: 33.512726}
+  m_Size: {x: 18, y: 33.5}
   m_EdgeRadius: 0
 --- !u!1 &588003841
 GameObject:
@@ -6806,13 +6825,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 588003841}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: -0, z: 0.7071068, w: -0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 10}
   m_LocalScale: {x: 0.19999999, y: 0.19999999, z: 1}
   m_Children: []
   m_Father: {fileID: 1148269135}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 270}
 --- !u!212 &588003843
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6964,7 +6983,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &632238412
 Transform:
   m_ObjectHideFlags: 0
@@ -7018,7 +7037,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1764215477
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 21e09660a57545547b9b4146a596ab53, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -7044,11 +7063,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minX: -14
   maxX: 14
-  minY: -6
-  maxY: 4
-  curlSpeed: 20
+  minY: -7
+  maxY: 5
+  curlSpeed: 60
   front: {fileID: 21300000, guid: b83b22298fc12ae4c8cb19c59fcd8e7a, type: 3}
   back: {fileID: 21300000, guid: 21e09660a57545547b9b4146a596ab53, type: 3}
+  cardReverseSound: {fileID: 8300000, guid: fa004eac8e4140444822e66b4aea4fa1, type: 3}
 --- !u!61 &632238415
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7073,7 +7093,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18, y: 33.512726}
+  m_Size: {x: 18, y: 33.5}
   m_EdgeRadius: 0
 --- !u!1 &636824076
 GameObject:
@@ -7547,7 +7567,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &704312151
 Transform:
   m_ObjectHideFlags: 0
@@ -7601,7 +7621,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1764215477
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 22f204fe0adc6824c95036847a3eb689, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -7627,11 +7647,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minX: -14
   maxX: 14
-  minY: -6
-  maxY: 4
-  curlSpeed: 20
+  minY: -7
+  maxY: 5
+  curlSpeed: 60
   front: {fileID: 21300000, guid: 7a448031a58f4e44b837e111a8c5ce05, type: 3}
   back: {fileID: 21300000, guid: 22f204fe0adc6824c95036847a3eb689, type: 3}
+  cardReverseSound: {fileID: 8300000, guid: fa004eac8e4140444822e66b4aea4fa1, type: 3}
 --- !u!61 &704312154
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7656,7 +7677,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18, y: 33.512726}
+  m_Size: {x: 18, y: 33.5}
   m_EdgeRadius: 0
 --- !u!1 &721408361
 GameObject:
@@ -7764,13 +7785,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 733933447}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: -0, z: 0.7071068, w: -0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 10}
   m_LocalScale: {x: 0.19999999, y: 0.19999999, z: 1}
   m_Children: []
   m_Father: {fileID: 1148269135}
   m_RootOrder: 91
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 270}
 --- !u!212 &733933449
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8086,7 +8107,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &787332448
 Transform:
   m_ObjectHideFlags: 0
@@ -8140,7 +8161,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1764215477
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 99aa2241ef014c9489707670511180ed, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -8166,11 +8187,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minX: -14
   maxX: 14
-  minY: -6
-  maxY: 4
-  curlSpeed: 20
+  minY: -7
+  maxY: 5
+  curlSpeed: 60
   front: {fileID: 21300000, guid: 784c0ac65e1e5024daa8fb77466942a0, type: 3}
   back: {fileID: 21300000, guid: 99aa2241ef014c9489707670511180ed, type: 3}
+  cardReverseSound: {fileID: 8300000, guid: fa004eac8e4140444822e66b4aea4fa1, type: 3}
 --- !u!61 &787332451
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8195,7 +8217,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18, y: 33.512726}
+  m_Size: {x: 18, y: 33.5}
   m_EdgeRadius: 0
 --- !u!1 &799235423
 GameObject:
@@ -8215,7 +8237,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &799235424
 Transform:
   m_ObjectHideFlags: 0
@@ -8269,7 +8291,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1764215477
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 40829c3318a5093498e6cf46ff49dd68, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -8295,11 +8317,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minX: -14
   maxX: 14
-  minY: -6
-  maxY: 4
-  curlSpeed: 20
+  minY: -7
+  maxY: 5
+  curlSpeed: 60
   front: {fileID: 21300000, guid: e4335ed2ea268234590adacb9d4501d8, type: 3}
   back: {fileID: 21300000, guid: 40829c3318a5093498e6cf46ff49dd68, type: 3}
+  cardReverseSound: {fileID: 8300000, guid: fa004eac8e4140444822e66b4aea4fa1, type: 3}
 --- !u!61 &799235427
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8324,7 +8347,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18, y: 33.512726}
+  m_Size: {x: 18, y: 33.5}
   m_EdgeRadius: 0
 --- !u!1 &800759919
 GameObject:
@@ -8350,13 +8373,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 800759919}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: -0, z: 0.7071068, w: -0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 10}
   m_LocalScale: {x: 0.19999999, y: 0.19999999, z: 1}
   m_Children: []
   m_Father: {fileID: 1148269135}
   m_RootOrder: 99
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 270}
 --- !u!212 &800759921
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9135,13 +9158,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 868690265}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: -0, z: 0.7071068, w: -0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 10}
   m_LocalScale: {x: 0.19999999, y: 0.19999999, z: 1}
   m_Children: []
   m_Father: {fileID: 1148269135}
   m_RootOrder: 85
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 270}
 --- !u!212 &868690267
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9217,13 +9240,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 874333897}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: -0, z: 0.7071068, w: -0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 10}
   m_LocalScale: {x: 0.19999999, y: 0.19999999, z: 1}
   m_Children: []
   m_Father: {fileID: 1148269135}
   m_RootOrder: 79
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 270}
 --- !u!212 &874333899
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9293,7 +9316,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &887493848
 Transform:
   m_ObjectHideFlags: 0
@@ -9347,7 +9370,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1764215477
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5d24883e591de824786e2b7d7fddd305, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -9373,11 +9396,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minX: -14
   maxX: 14
-  minY: -6
-  maxY: 4
-  curlSpeed: 20
+  minY: -7
+  maxY: 5
+  curlSpeed: 60
   front: {fileID: 21300000, guid: 5f40ed444298df54fbd12e6046ce5b5d, type: 3}
   back: {fileID: 21300000, guid: 4ce6c8df963694a4694e8545f3922110, type: 3}
+  cardReverseSound: {fileID: 8300000, guid: fa004eac8e4140444822e66b4aea4fa1, type: 3}
 --- !u!61 &887493851
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9402,7 +9426,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18, y: 33.512726}
+  m_Size: {x: 18, y: 33.5}
   m_EdgeRadius: 0
 --- !u!1 &891614605
 GameObject:
@@ -9422,7 +9446,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &891614606
 Transform:
   m_ObjectHideFlags: 0
@@ -9476,7 +9500,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1764215477
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: ab4b193f131a2724f962c0183b368cb8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -9502,11 +9526,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minX: -14
   maxX: 14
-  minY: -6
-  maxY: 4
-  curlSpeed: 20
+  minY: -7
+  maxY: 5
+  curlSpeed: 60
   front: {fileID: 21300000, guid: 58e3322dfbd742d4a9e6f67b80fd420f, type: 3}
   back: {fileID: 21300000, guid: ab4b193f131a2724f962c0183b368cb8, type: 3}
+  cardReverseSound: {fileID: 8300000, guid: fa004eac8e4140444822e66b4aea4fa1, type: 3}
 --- !u!61 &891614609
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9531,7 +9556,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18, y: 33.512726}
+  m_Size: {x: 18, y: 33.5}
   m_EdgeRadius: 0
 --- !u!1 &891949209
 GameObject:
@@ -9633,7 +9658,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &900001054
 Transform:
   m_ObjectHideFlags: 0
@@ -9687,7 +9712,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1764215477
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 89e1de8a375cac6428dcd356cf82f045, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -9713,11 +9738,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minX: -14
   maxX: 14
-  minY: -6
-  maxY: 4
-  curlSpeed: 20
+  minY: -7
+  maxY: 5
+  curlSpeed: 60
   front: {fileID: 21300000, guid: 4587e6a14c684d24b97d32d2c6d433a2, type: 3}
   back: {fileID: 21300000, guid: 89e1de8a375cac6428dcd356cf82f045, type: 3}
+  cardReverseSound: {fileID: 8300000, guid: fa004eac8e4140444822e66b4aea4fa1, type: 3}
 --- !u!61 &900001057
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9742,7 +9768,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18, y: 33.512726}
+  m_Size: {x: 18, y: 33.5}
   m_EdgeRadius: 0
 --- !u!1 &908444142
 GameObject:
@@ -9836,6 +9862,7 @@ GameObject:
   m_Component:
   - component: {fileID: 971006219}
   - component: {fileID: 971006220}
+  - component: {fileID: 971006221}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -9876,6 +9903,102 @@ MonoBehaviour:
   - {fileID: 365558928}
   informationDeck: {fileID: 1148269134}
   useDeck: {fileID: 1541040197}
+--- !u!82 &971006221
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971006218}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 4b72a4f7a215f4b41a5b6fa522058cb2, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.8
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &980317169
 GameObject:
   m_ObjectHideFlags: 0
@@ -10790,7 +10913,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1079263581
 Transform:
   m_ObjectHideFlags: 0
@@ -10844,7 +10967,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1764215477
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f8b3abece08e95448b9c2d2a8f8c449c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -10870,11 +10993,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minX: -14
   maxX: 14
-  minY: -6
-  maxY: 4
-  curlSpeed: 20
+  minY: -7
+  maxY: 5
+  curlSpeed: 60
   front: {fileID: 21300000, guid: c38d04ee5abe34b48b4b3f0a65bc2444, type: 3}
   back: {fileID: 21300000, guid: f8b3abece08e95448b9c2d2a8f8c449c, type: 3}
+  cardReverseSound: {fileID: 8300000, guid: fa004eac8e4140444822e66b4aea4fa1, type: 3}
 --- !u!61 &1079263584
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10899,7 +11023,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18, y: 33.512726}
+  m_Size: {x: 18, y: 33.5}
   m_EdgeRadius: 0
 --- !u!1 &1081445652
 GameObject:
@@ -10919,7 +11043,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1081445653
 Transform:
   m_ObjectHideFlags: 0
@@ -10973,7 +11097,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1764215477
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2af1303d588801742810cc69dc55d15c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -10999,11 +11123,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minX: -14
   maxX: 14
-  minY: -6
-  maxY: 4
-  curlSpeed: 20
+  minY: -7
+  maxY: 5
+  curlSpeed: 60
   front: {fileID: 21300000, guid: f88c3d6f578a07b46998407926103905, type: 3}
   back: {fileID: 21300000, guid: 2af1303d588801742810cc69dc55d15c, type: 3}
+  cardReverseSound: {fileID: 8300000, guid: fa004eac8e4140444822e66b4aea4fa1, type: 3}
 --- !u!61 &1081445656
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11028,7 +11153,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18, y: 33.512726}
+  m_Size: {x: 18, y: 33.5}
   m_EdgeRadius: 0
 --- !u!1 &1083660208
 GameObject:
@@ -11054,13 +11179,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1083660208}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: -0, z: 0.7071068, w: -0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 10}
   m_LocalScale: {x: 0.19999999, y: 0.19999999, z: 1}
   m_Children: []
   m_Father: {fileID: 1148269135}
   m_RootOrder: 37
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 270}
 --- !u!212 &1083660210
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11136,13 +11261,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1084346399}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: -0, z: 0.7071068, w: -0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 10}
   m_LocalScale: {x: 0.19999999, y: 0.19999999, z: 1}
   m_Children: []
   m_Father: {fileID: 1148269135}
   m_RootOrder: 87
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 270}
 --- !u!212 &1084346401
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11212,7 +11337,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1086464655
 Transform:
   m_ObjectHideFlags: 0
@@ -11266,7 +11391,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1764215477
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e9464c8247c6aad40b54f2a6c14417bb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -11292,11 +11417,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minX: -14
   maxX: 14
-  minY: -6
-  maxY: 4
-  curlSpeed: 20
+  minY: -7
+  maxY: 5
+  curlSpeed: 60
   front: {fileID: 21300000, guid: 6aafc3858269da94a9c7f5665bed885e, type: 3}
   back: {fileID: 21300000, guid: e9464c8247c6aad40b54f2a6c14417bb, type: 3}
+  cardReverseSound: {fileID: 8300000, guid: fa004eac8e4140444822e66b4aea4fa1, type: 3}
 --- !u!61 &1086464658
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11321,7 +11447,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18, y: 33.512726}
+  m_Size: {x: 18, y: 33.5}
   m_EdgeRadius: 0
 --- !u!1 &1090014052
 GameObject:
@@ -11341,7 +11467,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1090014053
 Transform:
   m_ObjectHideFlags: 0
@@ -11395,7 +11521,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1764215477
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 26d6c444cb4ce244887ffbc5303ba424, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -11421,11 +11547,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minX: -14
   maxX: 14
-  minY: -6
-  maxY: 4
-  curlSpeed: 20
+  minY: -7
+  maxY: 5
+  curlSpeed: 60
   front: {fileID: 21300000, guid: 3c1c7554f2bb4ee48a9b206768a1dbbf, type: 3}
   back: {fileID: 21300000, guid: 26d6c444cb4ce244887ffbc5303ba424, type: 3}
+  cardReverseSound: {fileID: 8300000, guid: fa004eac8e4140444822e66b4aea4fa1, type: 3}
 --- !u!61 &1090014056
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11450,7 +11577,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18, y: 33.512726}
+  m_Size: {x: 18, y: 33.5}
   m_EdgeRadius: 0
 --- !u!1 &1095990899
 GameObject:
@@ -11470,7 +11597,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1095990900
 Transform:
   m_ObjectHideFlags: 0
@@ -11524,7 +11651,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1764215477
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 55ed34ed9f414a64db49c429a3d772fb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -11550,11 +11677,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minX: -14
   maxX: 14
-  minY: -6
-  maxY: 4
-  curlSpeed: 20
+  minY: -7
+  maxY: 5
+  curlSpeed: 60
   front: {fileID: 21300000, guid: 9a8ddc20b3a34ec48aa92cb7bb444a2c, type: 3}
   back: {fileID: 21300000, guid: 55ed34ed9f414a64db49c429a3d772fb, type: 3}
+  cardReverseSound: {fileID: 8300000, guid: fa004eac8e4140444822e66b4aea4fa1, type: 3}
 --- !u!61 &1095990903
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11579,7 +11707,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18, y: 33.512726}
+  m_Size: {x: 18, y: 33.5}
   m_EdgeRadius: 0
 --- !u!1 &1105554905
 GameObject:
@@ -11599,7 +11727,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1105554906
 Transform:
   m_ObjectHideFlags: 0
@@ -11653,7 +11781,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1764215477
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 18385cfd525c98141a9ca0866ee4f2bc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -11679,11 +11807,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minX: -14
   maxX: 14
-  minY: -6
-  maxY: 4
-  curlSpeed: 20
+  minY: -7
+  maxY: 5
+  curlSpeed: 60
   front: {fileID: 21300000, guid: f29dc36a02c1ff745bd3183c710b935b, type: 3}
   back: {fileID: 21300000, guid: 18385cfd525c98141a9ca0866ee4f2bc, type: 3}
+  cardReverseSound: {fileID: 8300000, guid: fa004eac8e4140444822e66b4aea4fa1, type: 3}
 --- !u!61 &1105554909
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11708,7 +11837,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18, y: 33.512726}
+  m_Size: {x: 18, y: 33.5}
   m_EdgeRadius: 0
 --- !u!1 &1111466986
 GameObject:
@@ -11728,7 +11857,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1111466987
 Transform:
   m_ObjectHideFlags: 0
@@ -11782,7 +11911,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1764215477
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: ad061c846759f5e45b6960884ce318ea, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -11808,11 +11937,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minX: -14
   maxX: 14
-  minY: -6
-  maxY: 4
-  curlSpeed: 20
+  minY: -7
+  maxY: 5
+  curlSpeed: 60
   front: {fileID: 21300000, guid: dff39f293a4abbf45a20d98be855dd4b, type: 3}
   back: {fileID: 21300000, guid: ad061c846759f5e45b6960884ce318ea, type: 3}
+  cardReverseSound: {fileID: 8300000, guid: fa004eac8e4140444822e66b4aea4fa1, type: 3}
 --- !u!61 &1111466990
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11837,7 +11967,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18, y: 33.512726}
+  m_Size: {x: 18, y: 33.5}
   m_EdgeRadius: 0
 --- !u!1 &1111925316
 GameObject:
@@ -12027,13 +12157,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1119701777}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: -0, z: 0.7071068, w: -0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 10}
   m_LocalScale: {x: 0.19999999, y: 0.19999999, z: 1}
   m_Children: []
   m_Father: {fileID: 1148269135}
   m_RootOrder: 27
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 270}
 --- !u!212 &1119701779
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12103,7 +12233,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1138581748
 Transform:
   m_ObjectHideFlags: 0
@@ -12157,7 +12287,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1764215477
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 97a684b4b30f09a468b3e6cb774c8495, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -12183,11 +12313,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minX: -14
   maxX: 14
-  minY: -6
-  maxY: 4
-  curlSpeed: 20
+  minY: -7
+  maxY: 5
+  curlSpeed: 60
   front: {fileID: 21300000, guid: 84049a7d1f196e74fab036c297c38880, type: 3}
   back: {fileID: 21300000, guid: 97a684b4b30f09a468b3e6cb774c8495, type: 3}
+  cardReverseSound: {fileID: 8300000, guid: fa004eac8e4140444822e66b4aea4fa1, type: 3}
 --- !u!61 &1138581751
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12212,7 +12343,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18, y: 33.512726}
+  m_Size: {x: 18, y: 33.5}
   m_EdgeRadius: 0
 --- !u!1 &1140290187
 GameObject:
@@ -12402,13 +12533,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1145539533}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: -0, z: 0.7071068, w: -0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 10}
   m_LocalScale: {x: 0.19999999, y: 0.19999999, z: 1}
   m_Children: []
   m_Father: {fileID: 1148269135}
   m_RootOrder: 97
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 270}
 --- !u!212 &1145539535
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12628,7 +12759,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1162763400
 Transform:
   m_ObjectHideFlags: 0
@@ -12682,7 +12813,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1764215477
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e36bd2446fa796e4d85b5834aea7a254, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -12708,11 +12839,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minX: -14
   maxX: 14
-  minY: -6
-  maxY: 4
-  curlSpeed: 20
+  minY: -7
+  maxY: 5
+  curlSpeed: 60
   front: {fileID: 21300000, guid: 13bcde6b388b25a42828d2631a7799b3, type: 3}
   back: {fileID: 21300000, guid: e36bd2446fa796e4d85b5834aea7a254, type: 3}
+  cardReverseSound: {fileID: 8300000, guid: fa004eac8e4140444822e66b4aea4fa1, type: 3}
 --- !u!61 &1162763403
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12737,7 +12869,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18, y: 33.512726}
+  m_Size: {x: 18, y: 33.5}
   m_EdgeRadius: 0
 --- !u!1 &1181048841
 GameObject:
@@ -12757,7 +12889,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1181048842
 Transform:
   m_ObjectHideFlags: 0
@@ -12811,7 +12943,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1764215477
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d4badd457bf9c914e8c3c93d31e7dc08, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -12837,11 +12969,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minX: -14
   maxX: 14
-  minY: -6
-  maxY: 4
-  curlSpeed: 20
+  minY: -7
+  maxY: 5
+  curlSpeed: 60
   front: {fileID: 21300000, guid: 06c6375f8dadfec438497247a6080da4, type: 3}
   back: {fileID: 21300000, guid: d4badd457bf9c914e8c3c93d31e7dc08, type: 3}
+  cardReverseSound: {fileID: 8300000, guid: fa004eac8e4140444822e66b4aea4fa1, type: 3}
 --- !u!61 &1181048845
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12866,7 +12999,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18, y: 33.512726}
+  m_Size: {x: 18, y: 33.5}
   m_EdgeRadius: 0
 --- !u!1 &1190606210
 GameObject:
@@ -13062,13 +13195,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1190765204}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: -0, z: 0.7071068, w: -0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 10}
   m_LocalScale: {x: 0.19999999, y: 0.19999999, z: 1}
   m_Children: []
   m_Father: {fileID: 1148269135}
   m_RootOrder: 67
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 270}
 --- !u!212 &1190765206
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13220,7 +13353,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1219759054
 Transform:
   m_ObjectHideFlags: 0
@@ -13274,7 +13407,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1764215477
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: a36d843a712196f44b96565af9a694d2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -13300,11 +13433,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minX: -14
   maxX: 14
-  minY: -6
-  maxY: 4
-  curlSpeed: 20
+  minY: -7
+  maxY: 5
+  curlSpeed: 60
   front: {fileID: 21300000, guid: 392c944241ef7774caf3ef8dcc657eb2, type: 3}
   back: {fileID: 21300000, guid: a36d843a712196f44b96565af9a694d2, type: 3}
+  cardReverseSound: {fileID: 8300000, guid: fa004eac8e4140444822e66b4aea4fa1, type: 3}
 --- !u!61 &1219759057
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13329,7 +13463,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18, y: 33.512726}
+  m_Size: {x: 18, y: 33.5}
   m_EdgeRadius: 0
 --- !u!1 &1232695825
 GameObject:
@@ -13513,7 +13647,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1277568140
 Transform:
   m_ObjectHideFlags: 0
@@ -13567,7 +13701,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1764215477
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f498ed7754d698647bb19dc424ba167b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -13593,11 +13727,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minX: -14
   maxX: 14
-  minY: -6
-  maxY: 4
-  curlSpeed: 20
+  minY: -7
+  maxY: 5
+  curlSpeed: 60
   front: {fileID: 21300000, guid: 35b57e8f4d569114d9e6391819f32139, type: 3}
   back: {fileID: 21300000, guid: f498ed7754d698647bb19dc424ba167b, type: 3}
+  cardReverseSound: {fileID: 8300000, guid: fa004eac8e4140444822e66b4aea4fa1, type: 3}
 --- !u!61 &1277568143
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13622,7 +13757,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18, y: 33.512726}
+  m_Size: {x: 18, y: 33.5}
   m_EdgeRadius: 0
 --- !u!1 &1278475590
 GameObject:
@@ -13648,13 +13783,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1278475590}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: -0, z: 0.7071068, w: -0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 10}
   m_LocalScale: {x: 0.19999999, y: 0.19999999, z: 1}
   m_Children: []
   m_Father: {fileID: 1148269135}
   m_RootOrder: 93
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 270}
 --- !u!212 &1278475592
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14430,7 +14565,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1382377488
 Transform:
   m_ObjectHideFlags: 0
@@ -14484,7 +14619,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1764215477
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: cf92533874ad3b644a99a7946dc11f8c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -14510,11 +14645,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minX: -14
   maxX: 14
-  minY: -6
-  maxY: 4
-  curlSpeed: 20
+  minY: -7
+  maxY: 5
+  curlSpeed: 60
   front: {fileID: 21300000, guid: 99839af7cf8b99a45bf0db837aa0f3f3, type: 3}
   back: {fileID: 21300000, guid: cf92533874ad3b644a99a7946dc11f8c, type: 3}
+  cardReverseSound: {fileID: 8300000, guid: fa004eac8e4140444822e66b4aea4fa1, type: 3}
 --- !u!61 &1382377491
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14539,7 +14675,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18, y: 33.512726}
+  m_Size: {x: 18, y: 33.5}
   m_EdgeRadius: 0
 --- !u!1 &1382605381
 GameObject:
@@ -14789,7 +14925,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1425551763
 Transform:
   m_ObjectHideFlags: 0
@@ -14843,7 +14979,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1764215477
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5c7ae57ee8427684093c77069c2acf9f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -14869,11 +15005,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minX: -14
   maxX: 14
-  minY: -6
-  maxY: 4
-  curlSpeed: 20
+  minY: -7
+  maxY: 5
+  curlSpeed: 60
   front: {fileID: 21300000, guid: f0938e3164f12b04b8911bfc9fb7411e, type: 3}
   back: {fileID: 21300000, guid: 5c7ae57ee8427684093c77069c2acf9f, type: 3}
+  cardReverseSound: {fileID: 8300000, guid: fa004eac8e4140444822e66b4aea4fa1, type: 3}
 --- !u!61 &1425551766
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14898,7 +15035,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18, y: 33.512726}
+  m_Size: {x: 18, y: 33.5}
   m_EdgeRadius: 0
 --- !u!1 &1426899837
 GameObject:
@@ -15348,13 +15485,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1509873555}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: -0, z: 0.7071068, w: -0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 10}
   m_LocalScale: {x: 0.19999999, y: 0.19999999, z: 1}
   m_Children: []
   m_Father: {fileID: 1148269135}
   m_RootOrder: 115
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 270}
 --- !u!212 &1509873557
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15765,7 +15902,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1527548512
 Transform:
   m_ObjectHideFlags: 0
@@ -15819,7 +15956,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1764215477
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: dfd0cb551ba6f754f8b2211a58458b74, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -15845,11 +15982,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minX: -14
   maxX: 14
-  minY: -6
-  maxY: 4
-  curlSpeed: 20
+  minY: -7
+  maxY: 5
+  curlSpeed: 60
   front: {fileID: 21300000, guid: e55ec36ee0ffef947950e8ed17fca44f, type: 3}
   back: {fileID: 21300000, guid: dfd0cb551ba6f754f8b2211a58458b74, type: 3}
+  cardReverseSound: {fileID: 8300000, guid: fa004eac8e4140444822e66b4aea4fa1, type: 3}
 --- !u!61 &1527548515
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15874,7 +16012,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18, y: 33.512726}
+  m_Size: {x: 18, y: 33.5}
   m_EdgeRadius: 0
 --- !u!1 &1535885037
 GameObject:
@@ -16407,7 +16545,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1694415849
 Transform:
   m_ObjectHideFlags: 0
@@ -16461,7 +16599,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1764215477
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0faaf34307c45a747ba94359bd5fb00d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -16487,11 +16625,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minX: -14
   maxX: 14
-  minY: -6
-  maxY: 4
-  curlSpeed: 20
+  minY: -7
+  maxY: 5
+  curlSpeed: 60
   front: {fileID: 21300000, guid: 286f35fa656aae148acd012ef02334cf, type: 3}
   back: {fileID: 21300000, guid: 0faaf34307c45a747ba94359bd5fb00d, type: 3}
+  cardReverseSound: {fileID: 8300000, guid: fa004eac8e4140444822e66b4aea4fa1, type: 3}
 --- !u!61 &1694415852
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16516,7 +16655,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18, y: 33.512726}
+  m_Size: {x: 18, y: 33.5}
   m_EdgeRadius: 0
 --- !u!1 &1705990264
 GameObject:
@@ -16706,13 +16845,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1726450176}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: -0, z: 0.7071068, w: -0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 10}
   m_LocalScale: {x: 0.19999999, y: 0.19999999, z: 1}
   m_Children: []
   m_Father: {fileID: 1148269135}
   m_RootOrder: 103
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 270}
 --- !u!212 &1726450178
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16946,7 +17085,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1759993606
 Transform:
   m_ObjectHideFlags: 0
@@ -17000,7 +17139,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1764215477
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 66ae44b2aa0d9894a9d295aa7014e235, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -17026,11 +17165,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minX: -14
   maxX: 14
-  minY: -6
-  maxY: 4
-  curlSpeed: 20
+  minY: -7
+  maxY: 5
+  curlSpeed: 60
   front: {fileID: 21300000, guid: 51249b67bbf35cb4681990deb30009a8, type: 3}
   back: {fileID: 21300000, guid: 66ae44b2aa0d9894a9d295aa7014e235, type: 3}
+  cardReverseSound: {fileID: 8300000, guid: fa004eac8e4140444822e66b4aea4fa1, type: 3}
 --- !u!61 &1759993609
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17055,7 +17195,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18, y: 33.512726}
+  m_Size: {x: 18, y: 33.5}
   m_EdgeRadius: 0
 --- !u!1 &1765282608
 GameObject:
@@ -17157,7 +17297,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1767603010
 Transform:
   m_ObjectHideFlags: 0
@@ -17211,7 +17351,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1764215477
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c9267449cd94e6a4daa883dd3858343e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -17237,11 +17377,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minX: -14
   maxX: 14
-  minY: -6
-  maxY: 4
-  curlSpeed: 20
+  minY: -7
+  maxY: 5
+  curlSpeed: 60
   front: {fileID: 21300000, guid: c53a9d125f054b2479f8af5720192eb6, type: 3}
   back: {fileID: 21300000, guid: c9267449cd94e6a4daa883dd3858343e, type: 3}
+  cardReverseSound: {fileID: 8300000, guid: fa004eac8e4140444822e66b4aea4fa1, type: 3}
 --- !u!61 &1767603013
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17266,7 +17407,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18, y: 33.512726}
+  m_Size: {x: 18, y: 33.5}
   m_EdgeRadius: 0
 --- !u!1 &1770084730
 GameObject:
@@ -17286,7 +17427,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1770084731
 Transform:
   m_ObjectHideFlags: 0
@@ -17340,7 +17481,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1764215477
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d17e8c98e4906ba41a19a367ec9e25e1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -17366,11 +17507,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minX: -14
   maxX: 14
-  minY: -6
-  maxY: 4
-  curlSpeed: 20
+  minY: -7
+  maxY: 5
+  curlSpeed: 60
   front: {fileID: 21300000, guid: 78f81f4a3365b2e46856c4ecc571042d, type: 3}
   back: {fileID: 21300000, guid: d17e8c98e4906ba41a19a367ec9e25e1, type: 3}
+  cardReverseSound: {fileID: 8300000, guid: fa004eac8e4140444822e66b4aea4fa1, type: 3}
 --- !u!61 &1770084734
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17395,7 +17537,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18, y: 33.512726}
+  m_Size: {x: 18, y: 33.5}
   m_EdgeRadius: 0
 --- !u!1 &1774561465
 GameObject:
@@ -17415,7 +17557,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1774561466
 Transform:
   m_ObjectHideFlags: 0
@@ -17469,7 +17611,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1764215477
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f8500b3004991aa4f89ac6c8e41559cd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -17495,11 +17637,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minX: -14
   maxX: 14
-  minY: -6
-  maxY: 4
-  curlSpeed: 20
+  minY: -7
+  maxY: 5
+  curlSpeed: 60
   front: {fileID: 21300000, guid: 2c6d6f6fcaf339448aaeb5bd37b11d33, type: 3}
   back: {fileID: 21300000, guid: f8500b3004991aa4f89ac6c8e41559cd, type: 3}
+  cardReverseSound: {fileID: 8300000, guid: fa004eac8e4140444822e66b4aea4fa1, type: 3}
 --- !u!61 &1774561469
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17524,7 +17667,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18, y: 33.512726}
+  m_Size: {x: 18, y: 33.5}
   m_EdgeRadius: 0
 --- !u!1 &1800496230
 GameObject:
@@ -17632,13 +17775,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1812408631}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: -0, z: 0.7071068, w: -0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 10}
   m_LocalScale: {x: 0.19999999, y: 0.19999999, z: 1}
   m_Children: []
   m_Father: {fileID: 1148269135}
   m_RootOrder: 83
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 270}
 --- !u!212 &1812408633
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17708,7 +17851,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1825692133
 Transform:
   m_ObjectHideFlags: 0
@@ -17762,7 +17905,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1764215477
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b6b8de4c2b61faf418b8590bf2bfe88d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -17788,11 +17931,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minX: -14
   maxX: 14
-  minY: -6
-  maxY: 4
-  curlSpeed: 20
+  minY: -7
+  maxY: 5
+  curlSpeed: 60
   front: {fileID: 21300000, guid: 969a05c0420c1544cb143291ee59a45b, type: 3}
   back: {fileID: 21300000, guid: b6b8de4c2b61faf418b8590bf2bfe88d, type: 3}
+  cardReverseSound: {fileID: 8300000, guid: fa004eac8e4140444822e66b4aea4fa1, type: 3}
 --- !u!61 &1825692136
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17817,7 +17961,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18, y: 33.512726}
+  m_Size: {x: 18, y: 33.5}
   m_EdgeRadius: 0
 --- !u!1 &1828051024
 GameObject:
@@ -18001,7 +18145,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1839091031
 Transform:
   m_ObjectHideFlags: 0
@@ -18055,7 +18199,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1764215477
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 8f6311f30f497e546b2dbea235f305f3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -18081,11 +18225,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minX: -14
   maxX: 14
-  minY: -6
-  maxY: 4
-  curlSpeed: 20
+  minY: -7
+  maxY: 5
+  curlSpeed: 60
   front: {fileID: 21300000, guid: 24d29f329d5a04e4299c6f6b572d50d4, type: 3}
   back: {fileID: 21300000, guid: 8f6311f30f497e546b2dbea235f305f3, type: 3}
+  cardReverseSound: {fileID: 8300000, guid: fa004eac8e4140444822e66b4aea4fa1, type: 3}
 --- !u!61 &1839091034
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18110,7 +18255,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18, y: 33.512726}
+  m_Size: {x: 18, y: 33.5}
   m_EdgeRadius: 0
 --- !u!1 &1839384340
 GameObject:
@@ -18130,7 +18275,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1839384341
 Transform:
   m_ObjectHideFlags: 0
@@ -18184,7 +18329,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1764215477
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2bdf3b7231a385e419a3037f5ae66889, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -18210,11 +18355,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minX: -14
   maxX: 14
-  minY: -6
-  maxY: 4
-  curlSpeed: 20
+  minY: -7
+  maxY: 5
+  curlSpeed: 60
   front: {fileID: 21300000, guid: 1ff670649ae1cf441bf6c857859a80b9, type: 3}
   back: {fileID: 21300000, guid: 2bdf3b7231a385e419a3037f5ae66889, type: 3}
+  cardReverseSound: {fileID: 8300000, guid: fa004eac8e4140444822e66b4aea4fa1, type: 3}
 --- !u!61 &1839384344
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18239,7 +18385,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18, y: 33.512726}
+  m_Size: {x: 18, y: 33.5}
   m_EdgeRadius: 0
 --- !u!1 &1841975046
 GameObject:
@@ -18423,7 +18569,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1872686594
 Transform:
   m_ObjectHideFlags: 0
@@ -18477,7 +18623,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1764215477
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 41aef8fd011afd94ba9d93ac1c729808, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -18503,11 +18649,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minX: -14
   maxX: 14
-  minY: -6
-  maxY: 4
-  curlSpeed: 20
+  minY: -7
+  maxY: 5
+  curlSpeed: 60
   front: {fileID: 21300000, guid: ebcc5f41682cf0243a2ddbf63e538fc3, type: 3}
   back: {fileID: 21300000, guid: 41aef8fd011afd94ba9d93ac1c729808, type: 3}
+  cardReverseSound: {fileID: 8300000, guid: fa004eac8e4140444822e66b4aea4fa1, type: 3}
 --- !u!61 &1872686597
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18532,7 +18679,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18, y: 33.512726}
+  m_Size: {x: 18, y: 33.5}
   m_EdgeRadius: 0
 --- !u!1 &1889264902
 GameObject:
@@ -18552,7 +18699,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1889264903
 Transform:
   m_ObjectHideFlags: 0
@@ -18606,7 +18753,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1764215477
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 4bb48d5cb133a974ea7fa66b56dfc9c9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -18632,11 +18779,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minX: -14
   maxX: 14
-  minY: -6
-  maxY: 4
-  curlSpeed: 20
+  minY: -7
+  maxY: 5
+  curlSpeed: 60
   front: {fileID: 21300000, guid: c0c4cac8d9a8ff04b80b4816b3840376, type: 3}
   back: {fileID: 21300000, guid: 4bb48d5cb133a974ea7fa66b56dfc9c9, type: 3}
+  cardReverseSound: {fileID: 8300000, guid: fa004eac8e4140444822e66b4aea4fa1, type: 3}
 --- !u!61 &1889264906
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18661,7 +18809,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18, y: 33.512726}
+  m_Size: {x: 18, y: 33.5}
   m_EdgeRadius: 0
 --- !u!1 &1907540789
 GameObject:
@@ -18681,7 +18829,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1907540790
 Transform:
   m_ObjectHideFlags: 0
@@ -18735,7 +18883,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1764215477
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c6f226ae462b525408969f7598b34ce6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -18761,11 +18909,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minX: -14
   maxX: 14
-  minY: -6
-  maxY: 4
-  curlSpeed: 20
+  minY: -7
+  maxY: 5
+  curlSpeed: 60
   front: {fileID: 21300000, guid: 387d79209db43134688056d4d693ad6f, type: 3}
   back: {fileID: 21300000, guid: c6f226ae462b525408969f7598b34ce6, type: 3}
+  cardReverseSound: {fileID: 8300000, guid: fa004eac8e4140444822e66b4aea4fa1, type: 3}
 --- !u!61 &1907540793
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18790,7 +18939,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18, y: 33.512726}
+  m_Size: {x: 18, y: 33.5}
   m_EdgeRadius: 0
 --- !u!1 &1908324092
 GameObject:
@@ -18892,7 +19041,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1910216953
 Transform:
   m_ObjectHideFlags: 0
@@ -18946,7 +19095,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1764215477
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2ec6dc434cd527341b7cbab1662bddef, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -18972,11 +19121,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minX: -14
   maxX: 14
-  minY: -6
-  maxY: 4
-  curlSpeed: 20
+  minY: -7
+  maxY: 5
+  curlSpeed: 60
   front: {fileID: 21300000, guid: 596b9ad8ec535f2468e8915320a54cd7, type: 3}
   back: {fileID: 21300000, guid: 2ec6dc434cd527341b7cbab1662bddef, type: 3}
+  cardReverseSound: {fileID: 8300000, guid: fa004eac8e4140444822e66b4aea4fa1, type: 3}
 --- !u!61 &1910216956
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19001,7 +19151,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18, y: 33.512726}
+  m_Size: {x: 18, y: 33.5}
   m_EdgeRadius: 0
 --- !u!1 &1912218826
 GameObject:
@@ -19254,7 +19404,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1923735500
 Transform:
   m_ObjectHideFlags: 0
@@ -19308,7 +19458,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1764215477
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 6f2ad355b52a2d5418991fa27343329f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -19334,11 +19484,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minX: -14
   maxX: 14
-  minY: -6
-  maxY: 4
-  curlSpeed: 20
+  minY: -7
+  maxY: 5
+  curlSpeed: 60
   front: {fileID: 21300000, guid: 369b052df75af724d9610f1c0c661ac8, type: 3}
   back: {fileID: 21300000, guid: 6f2ad355b52a2d5418991fa27343329f, type: 3}
+  cardReverseSound: {fileID: 8300000, guid: fa004eac8e4140444822e66b4aea4fa1, type: 3}
 --- !u!61 &1923735503
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19363,7 +19514,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18, y: 33.512726}
+  m_Size: {x: 18, y: 33.5}
   m_EdgeRadius: 0
 --- !u!1 &1935278526
 GameObject:
@@ -19383,7 +19534,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1935278527
 Transform:
   m_ObjectHideFlags: 0
@@ -19437,7 +19588,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1764215477
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5c7316027c4237141ada370b22a9860b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -19463,11 +19614,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minX: -14
   maxX: 14
-  minY: -6
-  maxY: 4
-  curlSpeed: 20
+  minY: -7
+  maxY: 5
+  curlSpeed: 60
   front: {fileID: 21300000, guid: d2a5282d18b89c04c81ea879f0572035, type: 3}
   back: {fileID: 21300000, guid: 5c7316027c4237141ada370b22a9860b, type: 3}
+  cardReverseSound: {fileID: 8300000, guid: fa004eac8e4140444822e66b4aea4fa1, type: 3}
 --- !u!61 &1935278530
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19492,7 +19644,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18, y: 33.512726}
+  m_Size: {x: 18, y: 33.5}
   m_EdgeRadius: 0
 --- !u!1 &1944058679
 GameObject:
@@ -19594,7 +19746,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1944713302
 Transform:
   m_ObjectHideFlags: 0
@@ -19648,7 +19800,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1764215477
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 49a028b780a56bc40ad296f68f04f155, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -19674,11 +19826,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minX: -14
   maxX: 14
-  minY: -6
-  maxY: 4
-  curlSpeed: 20
+  minY: -7
+  maxY: 5
+  curlSpeed: 60
   front: {fileID: 21300000, guid: 816dab61873d82c4d80652ace4ea101f, type: 3}
   back: {fileID: 21300000, guid: 49a028b780a56bc40ad296f68f04f155, type: 3}
+  cardReverseSound: {fileID: 8300000, guid: fa004eac8e4140444822e66b4aea4fa1, type: 3}
 --- !u!61 &1944713305
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19703,7 +19856,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18, y: 33.512726}
+  m_Size: {x: 18, y: 33.5}
   m_EdgeRadius: 0
 --- !u!1 &1956064186
 GameObject:
@@ -19723,7 +19876,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1956064187
 Transform:
   m_ObjectHideFlags: 0
@@ -19777,7 +19930,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1764215477
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c32c7a9e226c2624096b1a9f614de913, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -19803,11 +19956,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minX: -14
   maxX: 14
-  minY: -6
-  maxY: 4
-  curlSpeed: 20
+  minY: -7
+  maxY: 5
+  curlSpeed: 60
   front: {fileID: 21300000, guid: 833c210c516493445a17f8af04e26704, type: 3}
   back: {fileID: 21300000, guid: c32c7a9e226c2624096b1a9f614de913, type: 3}
+  cardReverseSound: {fileID: 8300000, guid: fa004eac8e4140444822e66b4aea4fa1, type: 3}
 --- !u!61 &1956064190
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19832,7 +19986,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18, y: 33.512726}
+  m_Size: {x: 18, y: 33.5}
   m_EdgeRadius: 0
 --- !u!1 &1966660390
 GameObject:
@@ -19940,13 +20094,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1977248965}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: -0, z: 0.7071068, w: -0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 10}
   m_LocalScale: {x: 0.19999999, y: 0.19999999, z: 1}
   m_Children: []
   m_Father: {fileID: 1148269135}
   m_RootOrder: 17
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 270}
 --- !u!212 &1977248967
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20016,7 +20170,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1982688372
 Transform:
   m_ObjectHideFlags: 0
@@ -20070,7 +20224,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1764215477
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5019fd74f2067e74998c79c3aefed277, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -20096,11 +20250,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minX: -14
   maxX: 14
-  minY: -6
-  maxY: 4
-  curlSpeed: 20
+  minY: -7
+  maxY: 5
+  curlSpeed: 60
   front: {fileID: 21300000, guid: 73b614cd8d3f3ab428fbfedf96ca32a2, type: 3}
   back: {fileID: 21300000, guid: 5019fd74f2067e74998c79c3aefed277, type: 3}
+  cardReverseSound: {fileID: 8300000, guid: fa004eac8e4140444822e66b4aea4fa1, type: 3}
 --- !u!61 &1982688375
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20125,7 +20280,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18, y: 33.512726}
+  m_Size: {x: 18, y: 33.5}
   m_EdgeRadius: 0
 --- !u!1 &1984892644
 GameObject:
@@ -20320,13 +20475,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2006820036}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: -0, z: 0.7071068, w: -0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 10}
   m_LocalScale: {x: 0.19999999, y: 0.19999999, z: 1}
   m_Children: []
   m_Father: {fileID: 1148269135}
   m_RootOrder: 113
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 270}
 --- !u!212 &2006820038
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20396,7 +20551,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2055303805
 Transform:
   m_ObjectHideFlags: 0
@@ -20450,7 +20605,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1764215477
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c77c581c648d5f64d908e076a6f02d63, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -20476,11 +20631,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minX: -14
   maxX: 14
-  minY: -6
-  maxY: 4
-  curlSpeed: 20
+  minY: -7
+  maxY: 5
+  curlSpeed: 60
   front: {fileID: 21300000, guid: a90f44f5c87760640ae8ce27a6e98495, type: 3}
   back: {fileID: 21300000, guid: c77c581c648d5f64d908e076a6f02d63, type: 3}
+  cardReverseSound: {fileID: 8300000, guid: fa004eac8e4140444822e66b4aea4fa1, type: 3}
 --- !u!61 &2055303808
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20505,7 +20661,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18, y: 33.512726}
+  m_Size: {x: 18, y: 33.5}
   m_EdgeRadius: 0
 --- !u!1 &2070350458
 GameObject:
@@ -20525,7 +20681,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2070350459
 Transform:
   m_ObjectHideFlags: 0
@@ -20579,7 +20735,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1764215477
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: a6b2cbebcfaefa244b22be8a9692bbcb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -20605,11 +20761,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minX: -14
   maxX: 14
-  minY: -6
-  maxY: 4
-  curlSpeed: 20
+  minY: -7
+  maxY: 5
+  curlSpeed: 60
   front: {fileID: 21300000, guid: 2552cc2172623554fbf4f13f28a42c59, type: 3}
   back: {fileID: 21300000, guid: a6b2cbebcfaefa244b22be8a9692bbcb, type: 3}
+  cardReverseSound: {fileID: 8300000, guid: fa004eac8e4140444822e66b4aea4fa1, type: 3}
 --- !u!61 &2070350462
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20634,7 +20791,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18, y: 33.512726}
+  m_Size: {x: 18, y: 33.5}
   m_EdgeRadius: 0
 --- !u!1 &2086291149
 GameObject:

@@ -393,6 +393,8 @@ MonoBehaviour:
   zoomSpeed: 5
   limitX: 19
   limitY: 10
+  minSize: 2.5
+  maxSize: 8.5
 --- !u!114 &1869532668
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -409,3 +411,5 @@ MonoBehaviour:
   zoomSpeed: 5
   limitX: 19
   limitY: 10
+  minSize: 2.5
+  maxSize: 8.5

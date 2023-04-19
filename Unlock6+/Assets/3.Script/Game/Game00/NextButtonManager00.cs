@@ -36,7 +36,6 @@ public class NextButtonManager00 : GameManager
     #region
     public void Gimmick0()
     {
-        Debug.Log("GD");
         BringCard("0");
         cardQueue.Enqueue("0_1");
     }

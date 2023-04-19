@@ -89,7 +89,7 @@ public class NextBottonManager02 : GameManager
     {
         targetCard = new List<string> { "35", "86", "87", "88", "89" };
         BringCards(targetCard);
-        ObjectinArrayOnOff(false, useCards, "15");
+        ObjectinArrayOnOff(false, useCards, "18");
         ObjectinArrayOnOff(false, useCards, "75");
     }
     public void Gimmick35()
@@ -406,6 +406,7 @@ public class NextBottonManager02 : GameManager
         ObjectinArrayOnOff(false, useCards, "Z");
         ObjectinArrayOnOff(false, useCards, "K");
         ObjectinArrayOnOff(false, useCards, "C");
+        ObjectinArrayOnOff(false, useCards, "H");
     }
     public void GimmickK()
     {
