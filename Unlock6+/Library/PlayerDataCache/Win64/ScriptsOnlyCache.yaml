@@ -15,10 +15,12 @@ ScriptsOnlyBuild:
     - NextBottonManager02
     - NextButtonManager00
     - NextButtonManager01
+    - SetVolume
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
+    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridBrush
     - UnityEditor.Tilemaps.GridBrushEditor
@@ -53,6 +55,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Image
     - UnityEngine.UI.InputField
     - UnityEngine.UI.Outline
+    - UnityEngine.UI.Slider
     - UnityEngine.UI.Text
   sceneClasses:
     Assets/1.Scene/Credit.unity:
@@ -142,10 +145,16 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
       Script: {instanceID: 1516}
+    - Class: 114
+      Script: {instanceID: 1718}
     - Class: 114
       Script: {instanceID: 1964}
     - Class: 114
@@ -176,6 +185,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 4758}
     - Class: 114
       Script: {instanceID: 5804}
+    - Class: 114
+      Script: {instanceID: 181912}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -193,6 +204,12 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    - Class: 241
+      Script: {instanceID: 0}
+    - Class: 243
+      Script: {instanceID: 0}
+    - Class: 245
       Script: {instanceID: 0}
     Assets/1.Scene/GameScene1.unity:
     - Class: 1
@@ -213,10 +230,16 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
       Script: {instanceID: 1516}
+    - Class: 114
+      Script: {instanceID: 1718}
     - Class: 114
       Script: {instanceID: 1964}
     - Class: 114
@@ -249,6 +272,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 4792}
     - Class: 114
       Script: {instanceID: 5812}
+    - Class: 114
+      Script: {instanceID: 181912}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -267,6 +292,12 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
+    - Class: 241
+      Script: {instanceID: 0}
+    - Class: 243
+      Script: {instanceID: 0}
+    - Class: 245
+      Script: {instanceID: 0}
     Assets/1.Scene/GameScene2.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -284,12 +315,18 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
       Script: {instanceID: 1516}
     - Class: 114
       Script: {instanceID: 1632}
+    - Class: 114
+      Script: {instanceID: 1718}
     - Class: 114
       Script: {instanceID: 1964}
     - Class: 114
@@ -320,6 +357,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 4414}
     - Class: 114
       Script: {instanceID: 4758}
+    - Class: 114
+      Script: {instanceID: 181912}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -337,6 +376,12 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    - Class: 241
+      Script: {instanceID: 0}
+    - Class: 243
+      Script: {instanceID: 0}
+    - Class: 245
       Script: {instanceID: 0}
     Assets/1.Scene/GameScene3.unity:
     - Class: 1
@@ -383,6 +428,10 @@ ScriptsOnlyBuild:
     - Class: 48
       Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
@@ -817,7 +866,7 @@ ScriptsOnlyBuild:
     className: EventTrigger
   - hash:
       serializedVersion: 2
-      Hash: 7036d6ca407fe0d3175df0f89a89361a
+      Hash: c21840b6cc7ba81320a75625b41d985e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CardControl
@@ -1031,6 +1080,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEngine.U2D.IK
     className: FabrikSolver2D
+  - hash:
+      serializedVersion: 2
+      Hash: c22cc474258ec9da1b873435d24ee815
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SetVolume
   platform: 19
   scenePathNames:
   - Assets/1.Scene/MainScene.unity

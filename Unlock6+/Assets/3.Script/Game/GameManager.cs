@@ -50,7 +50,7 @@ public class GameManager : MonoBehaviour
     }
 
     // GameObject에 상속된 Object들을 배열로 저장
-    private GameObject[] ObjectsAsArray(GameObject objects)
+    public GameObject[] ObjectsAsArray(GameObject objects)
     {
         GameObject[] ObjectsArray = new GameObject[objects.transform.childCount];
         for (int i = 0; i < objects.transform.childCount; i++)
