@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class CardSortManager01 : GameManager
 {
+    [SerializeField] AudioSource AudioSource;
+    [SerializeField] AudioClip CardSortAudio;
     private Vector3[] cardPos = new Vector3[]
     {
         new Vector3(0, 4, 0), new Vector3(3, 4, 0), new Vector3(6, 4, 0), new Vector3(9, 4, 0), new Vector3(12, 4, 0),
@@ -16,6 +18,7 @@ public class CardSortManager01 : GameManager
 
     public void SortCards()
     {
+        AudioSource.PlayOneShot(CardSortAudio);
         Cardcounter = 0;
         foreach (GameObject group in useCards)
         {

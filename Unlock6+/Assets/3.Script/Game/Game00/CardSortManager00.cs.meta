@@ -3,7 +3,11 @@ guid: 5d756171f8b5d2148bb0abe6500311f9
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - informationDeck: {instanceID: 0}
+  - useDeck: {instanceID: 0}
+  - AudioSource: {instanceID: 0}
+  - CardSortAudio: {fileID: 8300000, guid: c1bdcf59c09fcc4488c5694adfe6d1c6, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

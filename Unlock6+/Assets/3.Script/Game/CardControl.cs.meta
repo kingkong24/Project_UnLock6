@@ -3,7 +3,10 @@ guid: 1cdab184f83cc574996b0b3a1c9d5b36
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - front: {instanceID: 0}
+  - back: {instanceID: 0}
+  - cardReverseSound: {fileID: 8300000, guid: fa004eac8e4140444822e66b4aea4fa1, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
