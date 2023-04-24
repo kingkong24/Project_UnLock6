@@ -17,15 +17,16 @@ public class TipManager : MonoBehaviour
     {
         while (true)
         {
+            yield return new WaitForSeconds(12.5f);
             tips[tipNum].SetActive(true);
-            yield return new WaitForSeconds(3.0f);
+            yield return new WaitForSeconds(5.0f);
             tips[tipNum].SetActive(false);
             tipNum += 1;
             if(tipNum >=7)
             {
                 tipNum = 0;
             }
-            yield return new WaitForSeconds(27.0f);
+            yield return new WaitForSeconds(12.5f);
         }
     }
 }

@@ -10,10 +10,12 @@ public class CardControl : MonoBehaviour
     [SerializeField] public Sprite front, back;
     [SerializeField] private AudioClip cardReverseSound;
     private AudioSource audioSource;
-    public static int orderInLayer = 0;
+    public static int orderInLayer = 60;
     private bool isfront = false;
-    private float RotationZ;
-    private Vector3 Error;
+    private float RotationZ, RotationZRadians;
+    private float Xpoint1, Xpoint2, Ypoint1, Ypoint2, point;
+    private float width = 0.9f, height = 1.675f;
+    private Vector3 Error, points;
     private Camera cam;
 
 
@@ -22,12 +24,12 @@ public class CardControl : MonoBehaviour
         audioSource = gameObject.AddComponent<AudioSource>();
         audioSource.playOnAwake = false;
         GetComponent<SpriteRenderer>().sprite = back;
-        gameObject.GetComponent<Renderer>().sortingOrder = orderInLayer;
         cam = Camera.main;
     }
 
     private void OnMouseOver()
     {
+
         if (Input.GetKey(KeyCode.Q))
         {
             RotationZ = transform.rotation.eulerAngles.z + curlSpeed * Time.deltaTime;
@@ -41,7 +43,7 @@ public class CardControl : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.R))
         {
-            if(isfront)
+            if (isfront)
             {
                 audioSource.PlayOneShot(cardReverseSound);
                 GetComponent<SpriteRenderer>().sprite = back;
@@ -54,11 +56,13 @@ public class CardControl : MonoBehaviour
                 isfront = true;
             }
         }
+        SetPosition();
     }
 
     // 오브젝트 드래그 앤 드롭
     private void OnMouseDown()
     {
+
         orderInLayer += 1;
         gameObject.GetComponent<Renderer>().sortingOrder = orderInLayer;
         
@@ -68,15 +72,10 @@ public class CardControl : MonoBehaviour
 
     private void OnMouseDrag()
     {
-        float radian = Mathf.Deg2Rad * 30f;
-        float sinValue = Mathf.Sin(radian);
-        float cosValue = Mathf.Cos(radian);
-
         //object의 위치를 오차만큼 더한곳으로 옮기기
         Vector3 pos = MousePos() + Error;
-        pos.x = Mathf.Clamp(pos.x, minX, maxX);
-        pos.y = Mathf.Clamp(pos.y, minY, maxY);
         transform.position = pos;
+        SetPosition();
     }
 
     private Vector3 MousePos()
@@ -86,4 +85,55 @@ public class CardControl : MonoBehaviour
         mousePos.z = 0;
         return mousePos; // 마우스 위치값 반환 
     }
+
+    private void SetPosition()
+    {
+        RotationZ = transform.rotation.eulerAngles.z;
+        RotationZRadians = RotationZ * Mathf.Deg2Rad;
+        Xpoint1 = width * Mathf.Cos(RotationZRadians) - height * Mathf.Sin(RotationZRadians);
+        Ypoint1 = width * Mathf.Sin(RotationZRadians) + height * Mathf.Cos(RotationZRadians);
+        Xpoint2 = width * Mathf.Cos(RotationZRadians) + height * Mathf.Sin(RotationZRadians);
+        Ypoint2 = - width * Mathf.Sin(RotationZRadians) + height * Mathf.Cos(RotationZRadians);
+        SetXposition(Xpoint1);
+        SetXposition(Xpoint2);
+        SetXposition(-Xpoint1);
+        SetXposition(-Xpoint2);
+        SetYposition(Ypoint1);
+        SetYposition(Ypoint2);
+        SetYposition(-Ypoint1);
+        SetYposition(-Ypoint2);
+    }
+
+    private void SetXposition(float Xpoint)
+    {
+        points = transform.position;
+        point = transform.position.x;
+        if (point + Xpoint > maxX)
+        {
+            point = maxX - Xpoint;
+        }
+        if ( point - Xpoint < minX)
+        {
+            point = minX + Xpoint;
+        }
+        points.x = point;
+        transform.position = points;
+    }
+
+    private void SetYposition(float Ypoint)
+    {
+        points = transform.position;
+        point = transform.position.y;
+        if (point + Ypoint > maxY)
+        {
+            point = maxY - Ypoint;
+        }
+        if (point - Ypoint < minY)
+        {
+            point = minY + Ypoint;
+        }
+        points.y = point;
+        transform.position = points;
+    }
+
 }

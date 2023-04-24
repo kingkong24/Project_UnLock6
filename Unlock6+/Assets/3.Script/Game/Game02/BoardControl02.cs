@@ -5,12 +5,16 @@ using UnityEngine;
 public class BoardControl02 : GameManager
 {
     [SerializeField] public Sprite front0, back0;
+    [SerializeField] private AudioClip cardReverseSound;
+    private AudioSource audioSource;
     public Sprite front, back;
     public bool isfront = true;
     private float curlSpeed = 20;
 
     void Awake()
     {
+        audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource.playOnAwake = false;
         gameObject.SetActive(false);
         front = front0;
         back = back0;
@@ -33,11 +37,13 @@ public class BoardControl02 : GameManager
         {
             if (isfront)
             {
+                audioSource.PlayOneShot(cardReverseSound);
                 GetComponent<SpriteRenderer>().sprite = back;
                 isfront = false;
             }
             else
             {
+                audioSource.PlayOneShot(cardReverseSound);
                 GetComponent<SpriteRenderer>().sprite = front;
                 isfront = true;
             }

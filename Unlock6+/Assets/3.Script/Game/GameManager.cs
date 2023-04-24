@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public static Queue<string> cardQueue = new Queue<string>();
     public static Dictionary<string, bool> IsRun;
     public static string curCard;
+    private int orderLayer = 0;
 
     [SerializeField] public GameObject[] cardInformationUI;
     [SerializeField] public GameObject informationDeck;
@@ -34,7 +35,9 @@ public class GameManager : MonoBehaviour
             {
                 IsRun.Add(group.name, false);
             }
+            group.GetComponent<Renderer>().sortingOrder = orderLayer;
             group.transform.position = new Vector3(20, -12, 0);
+            orderLayer += 1;
         }
 
         // informationCards,  useCards 비활성화, cardInformationUI 활성화
