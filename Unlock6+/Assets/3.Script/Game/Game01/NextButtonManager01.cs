@@ -11,6 +11,9 @@ public class NextButtonManager01 : GameManager
     [SerializeField] public GameObject GameObjectboard;
     [SerializeField] public GameObject CardSet;
     [SerializeField] public Sprite front0, back0, front1, back1, front2, back2, front3, back3, front4, back4, front5, back5, front6, back6;
+    [SerializeField] private AudioClip DonSound;
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private Camera cam;
     public Sprite front, back;
     public bool isfront = true;
     private List<string> targetCard;
@@ -410,6 +413,9 @@ public class NextButtonManager01 : GameManager
     }
     public void Gimmick32()
     {
+        StartCoroutine(CameraSpin());
+        audioSource.clip = DonSound;
+        audioSource.Play();
         BringCard("32");
         cardQueue.Enqueue("32_1");
     }
@@ -593,5 +599,25 @@ public class NextButtonManager01 : GameManager
                 cardQueue.Enqueue(group);
             }
         }
+    }
+
+    IEnumerator CameraSpin()
+    {
+        float timer = 0f;
+        float rotationTime = 2.5f;
+        float rotationSpeed = 400.0f;
+
+        while (timer < rotationTime)
+        {
+            Vector3 rotation = cam.transform.rotation.eulerAngles;
+            rotation.z += Time.deltaTime * rotationSpeed;
+            cam.transform.rotation = Quaternion.Euler(rotation);
+
+            // ´ë±â
+            yield return new WaitForSeconds(0.01f);
+
+            timer += 0.01f;
+        }
+        cam.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
     }
 }

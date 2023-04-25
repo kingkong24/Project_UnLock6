@@ -6,6 +6,9 @@ using System.Reflection;
 public class NextButtonManager03 : GameManager
 {
     [SerializeField] public GameObject GameObjectboard;
+    [SerializeField] private AudioClip BoomSound;
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private Camera cam;
     public bool isfront = true;
     private List<string> targetCard;
 
@@ -165,6 +168,9 @@ public class NextButtonManager03 : GameManager
     }
     public void Gimmick95()
     {
+        audioSource.clip = BoomSound;
+        audioSource.Play();
+        StartCoroutine(CameraShake(4.0f, 1.0f));
         BringCard("95");
         cardQueue.Enqueue("95_1");
     }
@@ -514,5 +520,19 @@ public class NextButtonManager03 : GameManager
                 cardQueue.Enqueue(group);
             }
         }
+    }
+
+    IEnumerator CameraShake(float dur, float mag)
+    {
+        float timer = 0;
+        Vector3 cameraIntPos = cam.transform.position;
+        while (timer <= dur)
+        {
+            cam.transform.position = Random.insideUnitSphere * mag + cameraIntPos;
+            timer += Time.deltaTime;
+            yield return null;
+        }
+
+        cam.transform.localPosition = cameraIntPos;
     }
 }

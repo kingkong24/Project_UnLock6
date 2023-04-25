@@ -6,6 +6,8 @@ public class TipManager : MonoBehaviour
 {
     [SerializeField] GameObject[] tips;
     private int tipNum;
+    WaitForSeconds WaitTime1 = new WaitForSeconds(12.5f);
+    WaitForSeconds WaitTime2 = new WaitForSeconds(12.5f);
 
     private void Start()
     {
@@ -17,16 +19,16 @@ public class TipManager : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(12.5f);
+            yield return WaitTime1;
             tips[tipNum].SetActive(true);
-            yield return new WaitForSeconds(5.0f);
+            yield return WaitTime2;
             tips[tipNum].SetActive(false);
             tipNum += 1;
-            if(tipNum >=7)
+            if(tipNum >=8)
             {
                 tipNum = 0;
             }
-            yield return new WaitForSeconds(12.5f);
+            yield return WaitTime1;
         }
     }
 }

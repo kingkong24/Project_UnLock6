@@ -718,7 +718,7 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
-      Hash: 0e6c5fc15703b96c791aa411f48b1cf0
+      Hash: e1158d988d5e51d90b991b2c4143e206
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CardSearchManager
@@ -970,7 +970,7 @@ ScriptsOnlyBuild:
     className: BaseInput
   - hash:
       serializedVersion: 2
-      Hash: 10dbb5b9f9f93b0a0250fe25ab1fb003
+      Hash: c3e7e5f5cda3e2801cc29e272c0903ca
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: NextButtonManager03
@@ -1138,7 +1138,7 @@ ScriptsOnlyBuild:
     className: BoardControl01
   - hash:
       serializedVersion: 2
-      Hash: bab71c0861a9af92d593374d43f2464b
+      Hash: 5f228db8874db4f80b15dcf6ab04104c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: NextButtonManager01
